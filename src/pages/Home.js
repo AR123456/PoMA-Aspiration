@@ -4,33 +4,34 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 
+import VideoPlayer from "../components/VideoPlayer";
+
 const Home = () => (
   <div>
     <Hero backgroundImage="./images/flag-splash.jpg">
       <h1>Path of Mindful Activity:</h1>
       <h2>The nitty-gritty of compassion in action</h2>
       <Container style={{ marginTop: 30 }}>
-        <Row>
-          {/* <Col size="md-12">
-            <h1>Welcome!</h1>
-          </Col> */}
-        </Row>
+        <Row />
         <Row>
           <Col size="md-6">
-            <p>
+            <h2>
               Approaching it [Video still & 2 minute video clip of, e.g., MDMP
               explaining the practice described in the following slides]
-            </p>
+            </h2>
+            <VideoPlayer src="./images/rain.mp4" />
           </Col>
           <Col size="md-6">
-            <p>
+            <h2>
               Test driving it [Video still & 2 minute video clip of someone
               describing their own use of the practice described in the flowing
               slides.]
-            </p>
+            </h2>
           </Col>
+          <VideoPlayer src="./images/snow.mp4" />
         </Row>
       </Container>
+      <button href="/relax"> Next </button>
     </Hero>
   </div>
 );

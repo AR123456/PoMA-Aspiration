@@ -8,6 +8,7 @@ const Relax = () => (
   <div>
     <Hero backgroundImage="./images/flag-splash.jpg">
       <h1>Pause and Relax.... </h1>
+      <button href="/ControlledCarousel">Next</button>
     </Hero>
     <Container style={{ marginTop: 30 }}>
       <Row>
@@ -19,7 +20,7 @@ const Relax = () => (
         <Col size="md-6">
           <p>
             on click to go to Carousel or remove this space and putt the button
-            on the image{" "}
+            on the image
           </p>
         </Col>
         <Col size="md-6">

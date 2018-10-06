@@ -46,26 +46,60 @@ const Navbar = props => (
         </li>
         <li
           className={
-            window.location.pathname === "/discover"
+            window.location.pathname === "/chosen"
               ? "nav-item active"
               : "nav-item"
           }
         >
-          <Link to="/discover" className="nav-link">
-            Discover
+          <Link to="/chosen" className="nav-link">
+            Chosen
           </Link>
         </li>
         <li
           className={
-            window.location.pathname === "/search"
+            window.location.pathname === "/inst"
               ? "nav-item active"
               : "nav-item"
           }
         >
-          <Link to="/search" className="nav-link">
-            Search
+          <Link to="/inst" className="nav-link">
+            Instruction
           </Link>
         </li>
+        <li
+          className={
+            window.location.pathname === "/form"
+              ? "nav-item active"
+              : "nav-item"
+          }
+        >
+          <Link to="/form" className="nav-link">
+            Form
+          </Link>
+        </li>
+
+        {/* <li
+          className={
+            window.location.pathname === "/inst"
+              ? "nav-item active"
+              : "nav-item"
+          }
+        >
+          <Link to="/inst" className="nav-link">
+            Instructions
+          </Link>
+        </li>
+        <li
+          className={
+            window.location.pathname === "/form"
+              ? "nav-item active"
+              : "nav-item"
+          }
+        >
+          <Link to="/form" className="nav-link">
+            Form
+          </Link>
+        </li> */}
       </ul>
     </div>
   </nav>
