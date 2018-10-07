@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ImageCard from "./components/ImageCard";
+import ImageForm from "./components/ImageForm";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import images from "./images.json";
@@ -16,6 +17,10 @@ class App extends Component {
     const images = this.state.images.filter(image => image.id !== id);
     // Set this.state.images equal to the new images array
     this.setState({ images });
+  };
+  renderImage = id => {
+    // the on click event needs to replace the images list with the clicked on Image
+    //with the form below it.
   };
 
   // Map over this.state.images and render a ImageCard component for each image object
@@ -34,6 +39,7 @@ class App extends Component {
             // location={image.location}
           />
         ))}
+        <ImageForm />;
       </Wrapper>
     );
   }
