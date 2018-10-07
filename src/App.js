@@ -12,31 +12,24 @@ class App extends Component {
     images
   };
 
-  removeImage = id => {
-    // Filter this.state.images for images with an id not equal to the id being removed
-    const images = this.state.images.filter(image => image.id !== id);
+  renderImage = id => {
+    // Filter this.state.images for images that is  equal to the id of image clicked
+    const images = this.state.images.filter(image => image.id === id);
     // Set this.state.images equal to the new images array
     this.setState({ images });
-  };
-  renderImage = id => {
-    // the on click event needs to replace the images list with the clicked on Image
-    //with the form below it.
   };
 
   // Map over this.state.images and render a ImageCard component for each image object
   render() {
     return (
       <Wrapper>
-        <Title>Images List</Title>
+        <Title>Click on Image to select it</Title>
         {this.state.images.map(image => (
           <ImageCard
             id={image.id}
             key={image.id}
-            // name={image.name}
             image={image.image}
-            removeImage={this.removeImage}
-            // occupation={image.occupation}
-            // location={image.location}
+            renderImage={this.renderImage}
           />
         ))}
         <ImageForm />;
