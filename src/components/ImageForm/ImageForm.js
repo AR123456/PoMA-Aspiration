@@ -28,7 +28,7 @@ class ImageForm extends Component {
 
     // This alert should be changes to that on submit the text is rendered to the PDF to print it.
 
-    alert(`Hello ${this.state.q1} ${this.state.q2}`);
+    window.print(`Hello ${this.state.q1} ${this.state.q2}`);
     this.setState({
       q1: "",
       q2: "",
@@ -49,7 +49,7 @@ class ImageForm extends Component {
             name="q1"
             onChange={this.handleInputChange}
             type="text"
-            placeholder="1111"
+            placeholder=""
           />
           <label>I will bring at least a tiny amount more </label>
           <input
@@ -57,7 +57,7 @@ class ImageForm extends Component {
             name="q2"
             onChange={this.handleInputChange}
             type="text"
-            placeholder="222222 "
+            placeholder=""
           />
           <label>to moments when my habit has been</label>
           <input
@@ -65,7 +65,7 @@ class ImageForm extends Component {
             name="q3"
             onChange={this.handleInputChange}
             type="text"
-            placeholder="33333 "
+            placeholder=""
           />{" "}
           <label>by pausing when I recognize</label>
           <input
@@ -73,7 +73,7 @@ class ImageForm extends Component {
             name="q4"
             onChange={this.handleInputChange}
             type="text"
-            placeholder="4444"
+            placeholder=""
           />
           <label>This image will remind me to PAUSE, RELAX, and</label>
           <input
@@ -81,7 +81,7 @@ class ImageForm extends Component {
             name="q5"
             onChange={this.handleInputChange}
             type="text"
-            placeholder="555 "
+            placeholder=""
           />
           <h2>
             Aspiration for building a new habit of: {this.state.q1}. I will
@@ -92,7 +92,7 @@ class ImageForm extends Component {
             {this.state.q4}. This image will remind me to PAUSE, RELAX, and{" "}
             {this.state.q5}.
           </h2>
-          <button onClick={this.handleFormSubmit}>Submit</button>
+          <button onClick={this.handleFormSubmit}>Print</button>
         </form>
       </div>
     );
