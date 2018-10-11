@@ -27,8 +27,16 @@ class ImageForm extends Component {
     event.preventDefault();
 
     // This alert should be changes to that on submit the text is rendered to the PDF to print it.
-
-    window.print(`Hello ${this.state.q1} ${this.state.q2}`);
+    // alert(`
+    //   Aspiration for building a new habit of: ${this.state.q1}
+    //   I will bring at least a tiny amount more ${
+    //     this.state.q2
+    //   }to moments when my habit has been ${this.state.q3} by pausing when I
+    //   recognize ${
+    //     this.state.q4
+    //   }. This image will remind me to PAUSE, RELAX, and  ${this.state.q5}.
+    // `);
+    window.print();
     this.setState({
       q1: "",
       q2: "",
@@ -83,15 +91,13 @@ class ImageForm extends Component {
             type="text"
             placeholder=""
           />
-          <h2>
-            Aspiration for building a new habit of: {this.state.q1}. I will
-            bring at least a tiny amount more {this.state.q2}
-            to moments when my habit has been
-            {this.state.q3}
-            by pausing when I recognize
-            {this.state.q4}. This image will remind me to PAUSE, RELAX, and{" "}
-            {this.state.q5}.
-          </h2>
+          {/* <h2>
+            Aspiration for building a new habit of: {this.state.q1}
+            <br />I will bring at least a tiny amount more {this.state.q2} to
+            moments when my habit has been {this.state.q3} by pausing when I
+            recognize {this.state.q4}.<br />
+            This image will remind me to PAUSE, RELAX, and {this.state.q5}.
+          </h2> */}
           <button onClick={this.handleFormSubmit}>Print</button>
         </form>
       </div>

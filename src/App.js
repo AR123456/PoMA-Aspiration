@@ -1,41 +1,37 @@
-import React, { Component } from "react";
-import ImageCard from "./components/ImageCard";
-import ImageForm from "./components/ImageForm";
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Chosen from "./pages/Chosen";
+import Home from "./pages/Home";
+import Relax from "./pages/Relax";
+import Inst from "./pages/Inst";
+import Form from "./pages/Form";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
-import images from "./images.json";
-import "./App.css";
 
-class App extends Component {
-  // Setting this.state.images to the images json array
-  state = {
-    images
-  };
+import ControlledCarousel from "./pages/ControlledCarousel";
 
-  renderImage = id => {
-    // Filter this.state.images for images that is  equal to the id of image clicked
-    const images = this.state.images.filter(image => image.id === id);
-    // Set this.state.images equal to the new images array
-    this.setState({ images });
-  };
-
-  // Map over this.state.images and render a ImageCard component for each image object
-  render() {
-    return (
+const App = () => (
+  <Router>
+    <div>
+      <Navbar />
       <Wrapper>
-        <Title>Click on Image to select it</Title>
-        {this.state.images.map(image => (
-          <ImageCard
-            id={image.id}
-            key={image.id}
-            image={image.image}
-            renderImage={this.renderImage}
-          />
-        ))}
-        <ImageForm />;
+        <Route exact path="/" component={Home} />
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/relax" component={Relax} />
+        <Route
+          exact
+          path="/controlledcarousel"
+          component={ControlledCarousel}
+        />
+        <Route exact path="/chosen" component={Chosen} />
+        <Route exact path="/inst" component={Inst} />
+        <Route exact path="/form" component={Form} />
       </Wrapper>
-    );
-  }
-}
+
+      <Footer />
+    </div>
+  </Router>
+);
 
 export default App;
