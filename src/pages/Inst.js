@@ -72,7 +72,7 @@ const Inst = () => (
               </Animated>
               <Animated
                 animationIn="fadeInUp"
-                animationInDelay="8000"
+                animationInDelay="9000"
                 animationOut="fadeOut"
                 isVisible={true}
               >
@@ -99,7 +99,7 @@ const Inst = () => (
         </Row>
         <Animated
           animationIn="fadeInUp"
-          animationInDelay="9999"
+          animationInDelay="12000"
           animationOut="fadeOut"
           isVisible={true}
         >

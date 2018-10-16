@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Chosen from "./pages/Chosen";
+// import Chosen from "./pages/Chosen";
 import Home from "./pages/Home";
 import Relax from "./pages/Relax";
 import Inst from "./pages/Inst";
@@ -24,7 +24,7 @@ const App = () => (
           path="/controlledcarousel"
           component={ControlledCarousel}
         />
-        <Route exact path="/chosen" component={Chosen} />
+        {/* <Route exact path="/chosen" component={Chosen} /> */}
         <Route exact path="/inst" component={Inst} />
         <Route exact path="/form" component={Form} />
       </Wrapper>

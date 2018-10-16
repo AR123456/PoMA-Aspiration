@@ -38,7 +38,7 @@ class ControlledCarousel extends Component {
             <Hero backgroundImage="./images/flag-splash.jpg" />
             <Carousel.Caption>
               <Animated
-                animationIn="bounceInLeft"
+                animationIn="fadeInLeft"
                 animationOut="fadeOut"
                 isVisible={true}
               >
@@ -47,7 +47,7 @@ class ControlledCarousel extends Component {
                 </div>
               </Animated>
               <Animated
-                animationIn="bounceInRight"
+                animationIn="fadeInRight"
                 animationInDelay="1000"
                 animationOut="fadeOut"
                 isVisible={true}
@@ -57,7 +57,7 @@ class ControlledCarousel extends Component {
                 </div>
               </Animated>
               <Animated
-                animationIn="bounceInRight"
+                animationIn="fadeInRight"
                 animationInDelay="2000"
                 animationOut="fadeOut"
                 isVisible={true}
@@ -67,7 +67,7 @@ class ControlledCarousel extends Component {
                 </div>
               </Animated>
               <Animated
-                animationIn="bounceInRight"
+                animationIn="fadeInRight"
                 animationInDelay="3000"
                 animationOut="fadeOut"
                 isVisible={true}
@@ -82,7 +82,7 @@ class ControlledCarousel extends Component {
             <Hero backgroundImage="./images/flag-splash.jpg" />
             <Carousel.Caption>
               <Animated
-                animationIn="bounceInLeft"
+                animationIn="fadeInLeft"
                 animationInDelay="1000"
                 animationOut="fadeOut"
                 isVisible={true}
@@ -92,18 +92,46 @@ class ControlledCarousel extends Component {
                 </div>
               </Animated>
               <Animated
-                animationIn="bounceInRight"
+                animationIn="fadeInRight"
+                animationInDelay="2000"
+                animationOut="fadeOut"
+                isVisible={true}
+              >
+                <div>
+                  <h1>On the next few screens, images appear.</h1>
+                </div>
+              </Animated>
+              <Animated
+                animationIn="fadeInRight"
                 animationInDelay="3000"
                 animationOut="fadeOut"
                 isVisible={true}
               >
                 <div>
                   <h1>
-                    On the next few screens, images appear. Look at each, find
-                    one you feel drawn to or that sparks curiosity No need to
-                    overthink it, go with your gut. When you have decided click
-                    on the Aspiration button
+                    Look at each, find one you feel drawn to or that sparks
+                    curiosity
                   </h1>
+                </div>
+              </Animated>
+              <Animated
+                animationIn="fadeInRight"
+                animationInDelay="4000"
+                animationOut="fadeOut"
+                isVisible={true}
+              >
+                <div>
+                  <h1>No need to overthink it, go with your gut.</h1>
+                </div>
+              </Animated>
+              <Animated
+                animationIn="fadeInRight"
+                animationInDelay="5000"
+                animationOut="fadeOut"
+                isVisible={true}
+              >
+                <div>
+                  <h1>When you have decided click on the Aspiration button</h1>
                 </div>
               </Animated>
             </Carousel.Caption>

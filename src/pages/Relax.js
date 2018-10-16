@@ -22,8 +22,8 @@ const Relax = () => (
         </Link>
       </button>
     </Hero>
-    <Container style={{ marginTop: 30 }}>
-      <Row>
+    {/* <Container style={{ marginTop: 30 }}>
+      {/* <Row>
         <Col size="md-12">
           <h1>Welcome!</h1>
         </Col>
@@ -38,8 +38,8 @@ const Relax = () => (
         <Col size="md-6">
           <p>on click to go to Carousel</p>
         </Col>
-      </Row>
-    </Container>
+      </Row> */}
+    {/* </Container> */}
   </div>
 );
 export default Relax;

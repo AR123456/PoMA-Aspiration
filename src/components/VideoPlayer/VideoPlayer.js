@@ -24,9 +24,8 @@ import "./VideoPlayer.css";
 // }
 const VideoPlayer = props => (
   <div>
-    <div>
-      <iframe src="" />
-    </div>
+    <div />
+    this component is not being used
   </div>
 );
 

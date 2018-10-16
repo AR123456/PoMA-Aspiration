@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import "./ImageForm.css";
+import Title from "../Title";
 
 class ImageForm extends Component {
   // Setting the component's initial state
@@ -50,6 +51,7 @@ class ImageForm extends Component {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
       <div>
+        <Title> Complete form below </Title>
         <form className="form">
           <label>Aspiration for building a new habit of: </label>
           <input

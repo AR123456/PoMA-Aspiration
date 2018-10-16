@@ -4,7 +4,6 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import { Link } from "react-router-dom";
-import VideoPlayer from "../components/VideoPlayer";
 
 const Home = () => (
   <div>
@@ -19,7 +18,8 @@ const Home = () => (
               Approaching it [Video still & 2 minute video clip of, e.g., MDMP
               explaining the practice described in the following slides]
             </h2>
-            <VideoPlayer src="./images/rain.mp4" />
+
+            <iframe src="./images/rain.mp4" />
           </Col>
           <Col size="md-6">
             <h2>
@@ -28,7 +28,8 @@ const Home = () => (
               slides.]
             </h2>
           </Col>
-          <VideoPlayer src="./images/snow.mp4" />
+
+          <iframe src="./images/snow.mp4"> </iframe>
         </Row>
       </Container>
       <button
