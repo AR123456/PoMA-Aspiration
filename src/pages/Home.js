@@ -10,7 +10,7 @@ const Home = () => (
     <Hero backgroundImage="./images/flag-splash.jpg">
       <h1>Path of Mindful Activity:</h1>
       <h2>The nitty-gritty of compassion in action</h2>
-      <Container style={{ marginTop: 30 }}>
+      <Container>
         <Row />
         <Row>
           <Col size="md-6">
@@ -27,20 +27,21 @@ const Home = () => (
               describing their own use of the practice described in the flowing
               slides.]
             </h2>
+            <iframe src="./images/snow.mp4"> </iframe>
           </Col>
-
-          <iframe src="./images/snow.mp4"> </iframe>
         </Row>
+        <button
+          className={
+            window.location.pathname === "/relax"
+              ? "nav-item active"
+              : "nav-item"
+          }
+        >
+          <Link to="/relax" className="nav-link">
+            Next
+          </Link>
+        </button>
       </Container>
-      <button
-        className={
-          window.location.pathname === "/relax" ? "nav-item active" : "nav-item"
-        }
-      >
-        <Link to="/relax" className="nav-link">
-          Next
-        </Link>
-      </button>
     </Hero>
   </div>
 );

@@ -9,19 +9,22 @@ const Relax = () => (
   <div>
     <Hero backgroundImage="./images/flag-splash.jpg">
       <h1>Pause and Relax.... </h1>
-      <button
-        className={
-          window.location.pathname === "/controlledcarousel"
-            ? "nav-item active"
-            : "nav-item"
-        }
-      >
-        <Link to="/controlledcarousel" className="nav-link">
-          {" "}
-          Next
-        </Link>
-      </button>
+      <Container style={{ marginTop: 130 }}>
+        <button
+          className={
+            window.location.pathname === "/controlledcarousel"
+              ? "nav-item active"
+              : "nav-item"
+          }
+        >
+          <Link to="/controlledcarousel" className="nav-link">
+            {" "}
+            Next
+          </Link>
+        </button>
+      </Container>
     </Hero>
+
     {/* <Container style={{ marginTop: 30 }}>
       {/* <Row>
         <Col size="md-12">

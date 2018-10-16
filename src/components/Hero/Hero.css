@@ -1,5 +1,5 @@
 .hero {
-  height: 600px;
+  height: 800px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -29,6 +29,6 @@
 
 .hero h1 {
   font-size: 60px;
-  padding-top: 140px;
+  padding-top: 10px;
   margin-top: 0;
 }
