@@ -14,7 +14,7 @@ import ControlledCarousel from "./pages/ControlledCarousel";
 const App = () => (
   <Router>
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Wrapper>
         <Route exact path="/" component={Home} />
         <Route exact path="/home" component={Home} />
