@@ -15,17 +15,19 @@ const Home = () => (
         <Row>
           <Col size="md-6">
             <h2>
-              Approaching it [Video still & 2 minute video clip of, e.g., MDMP
-              explaining the practice described in the following slides]
+              Approaching it
+              {/* [Video still & 2 minute video clip of, e.g., MDMP
+              explaining the practice described in the following slides] */}
             </h2>
 
             <iframe src="./images/rain.mp4" />
           </Col>
           <Col size="md-6">
             <h2>
-              Test driving it [Video still & 2 minute video clip of someone
-              describing their own use of the practice described in the flowing
-              slides.]
+              Test driving it
+              {/* [Video still & 2 minute video clip of someone
+              describing their own use of the practice described in the flowing */}
+              {/* slides.] */}
             </h2>
             <iframe src="./images/snow.mp4"> </iframe>
           </Col>

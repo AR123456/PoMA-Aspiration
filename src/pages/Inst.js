@@ -71,17 +71,34 @@ const Inst = () => (
                 <h2>On the next screen click on your chosen image.</h2>
               </Animated>
               <Animated
-                animationIn="fadeInUp"
-                animationInDelay="9000"
+                animationIn="fadeInLeft"
+                animationInDelay="10000"
                 animationOut="fadeOut"
                 isVisible={true}
               >
                 <h2>
-                  Jot down a few words to capture connections between the image
-                  and your aspiration for change. If no thoughts come, just
-                  relax and rest your eyes on the image. Thoughts may come
-                  later, or tomorrow.
+                  Then in the space provided jot down a few words to capture
+                  connections between the image and your aspiration for change.
                 </h2>
+              </Animated>
+              <Animated
+                animationIn="fadeInLeft"
+                animationInDelay="14000"
+                animationOut="fadeOut"
+                isVisible={true}
+              >
+                <h2>
+                  If no thoughts come, just relax and rest your eyes on the
+                  image.
+                </h2>
+              </Animated>
+              <Animated
+                animationIn="fadeInLeft"
+                animationInDelay="16000"
+                animationOut="fadeOut"
+                isVisible={true}
+              >
+                <h2>Thoughts may come later, or tomorrow.</h2>
               </Animated>
             </Col>
           </h2>
@@ -99,7 +116,7 @@ const Inst = () => (
         </Row>
         <Animated
           animationIn="fadeInUp"
-          animationInDelay="12000"
+          animationInDelay="18000"
           animationOut="fadeOut"
           isVisible={true}
         >

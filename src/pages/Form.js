@@ -24,7 +24,7 @@ class Form extends React.Component {
   render() {
     return (
       <Wrapper>
-        <Title>Click on Image to select it</Title>
+        {/* <Title>Click on Image to select it</Title> */}
         {this.state.images.map(image => (
           <ImageCard
             id={image.id}
@@ -33,7 +33,7 @@ class Form extends React.Component {
             renderImage={this.renderImage}
           />
         ))}
-        <ImageForm />;
+        <ImageForm />
       </Wrapper>
     );
   }

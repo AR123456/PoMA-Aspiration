@@ -36,7 +36,7 @@ class ImageForm extends Component {
     //   recognize ${
     //     this.state.q4
     //   }. This image will remind me to PAUSE, RELAX, and  ${this.state.q5}.
-    // `);
+    // `)
     window.print();
     this.setState({
       q1: "",
@@ -51,7 +51,6 @@ class ImageForm extends Component {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
       <div>
-        <Title> Complete form below </Title>
         <form className="form">
           <label>Aspiration for building a new habit of: </label>
           <input
@@ -76,7 +75,7 @@ class ImageForm extends Component {
             onChange={this.handleInputChange}
             type="text"
             placeholder=""
-          />{" "}
+          />
           <label>by pausing when I recognize</label>
           <input
             value={this.state.q4}
@@ -93,13 +92,6 @@ class ImageForm extends Component {
             type="text"
             placeholder=""
           />
-          {/* <h2>
-            Aspiration for building a new habit of: {this.state.q1}
-            <br />I will bring at least a tiny amount more {this.state.q2} to
-            moments when my habit has been {this.state.q3} by pausing when I
-            recognize {this.state.q4}.<br />
-            This image will remind me to PAUSE, RELAX, and {this.state.q5}.
-          </h2> */}
           <button onClick={this.handleFormSubmit}>Print</button>
         </form>
       </div>
