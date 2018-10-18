@@ -22,17 +22,7 @@ const Navbar = props => (
             Home
           </Link>
         </li>
-        <li
-          className={
-            window.location.pathname === "/relax"
-              ? "nav-item active"
-              : "nav-item"
-          }
-        >
-          <Link to="/relax" className="nav-link">
-            Relax
-          </Link>
-        </li>
+
         <li
           className={
             window.location.pathname === "/controlledcarousel"

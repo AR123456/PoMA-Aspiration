@@ -38,6 +38,20 @@ class ControlledCarousel extends Component {
             <Hero backgroundImage="./images/flag-splash.jpg" />
             <Carousel.Caption>
               <Animated
+                animationIn="fadeInRight"
+                animationOut="fadeOut"
+                isVisible={true}
+              >
+                <div style={{ paddingBottom: 400 }}>
+                  <h1 style={{ fontSize: 60 }}>Pause and Relax.... </h1>
+                </div>
+              </Animated>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Hero backgroundImage="./images/flag-splash.jpg" />
+            <Carousel.Caption style={{ paddingBottom: 300 }}>
+              <Animated
                 animationIn="fadeInLeft"
                 animationOut="fadeOut"
                 isVisible={true}
@@ -80,7 +94,7 @@ class ControlledCarousel extends Component {
           </Carousel.Item>
           <Carousel.Item>
             <Hero backgroundImage="./images/flag-splash.jpg" />
-            <Carousel.Caption>
+            <Carousel.Caption style={{ paddingBottom: 200 }}>
               <Animated
                 animationIn="fadeInLeft"
                 animationInDelay="1000"

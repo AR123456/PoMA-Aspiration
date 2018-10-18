@@ -34,6 +34,18 @@ const Home = () => (
         </Row>
         <button
           className={
+            window.location.pathname === "/controlledcarousel"
+              ? "nav-item active"
+              : "nav-item"
+          }
+        >
+          <Link to="/controlledcarousel" className="nav-link">
+            {" "}
+            Next
+          </Link>
+        </button>
+        {/* <button
+          className={
             window.location.pathname === "/relax"
               ? "nav-item active"
               : "nav-item"
@@ -42,7 +54,7 @@ const Home = () => (
           <Link to="/relax" className="nav-link">
             Next
           </Link>
-        </button>
+        </button> */}
       </Container>
     </Hero>
   </div>
