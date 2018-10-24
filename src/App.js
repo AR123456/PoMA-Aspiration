@@ -1,37 +1,39 @@
-import React from "react";
+import React, { Component } from "react";
+import "./App.css";
+import { Container, Row, Col } from "reactstrap";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-// import Chosen from "./pages/Chosen";
-import Home from "./pages/Home";
 
-import Inst from "./pages/Inst";
-import Form from "./pages/Form";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Wrapper from "./components/Wrapper";
+import Caro from "./components/Caro";
+import Frm from "./components/Frm";
+import Grid from "./components/PicGrid";
 
-import ControlledCarousel from "./pages/ControlledCarousel";
+import NavBar from "./components/NavBar";
+import Player from "./components/Player";
+import PicGrid from "./components/PicGrid";
+import Home from "./components/Home";
 
 const App = () => (
   <Router>
     <div>
-      <Navbar />
-      <Wrapper>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/home" component={Home} />
-
-        <Route
-          exact
-          path="/controlledcarousel"
-          component={ControlledCarousel}
-        />
-        {/* <Route exact path="/chosen" component={Chosen} /> */}
-        <Route exact path="/inst" component={Inst} />
-        <Route exact path="/form" component={Form} />
-      </Wrapper>
-
-      <Footer />
+      <NavBar />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/home" component={Home} />
+      <Route exact path="/caro" component={Caro} />
     </div>
   </Router>
 );
+// class App extends Component {
+//   render() {
+//     return (
+//       <Container>
+//         <NavBar />
+//         <Jumbo />
+//         <Caro />
+//         <Frm />
+//         <Grid />
+//       </Container>
+//     );
+//   }
+// }
 
 export default App;

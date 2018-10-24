@@ -1,0 +1,11 @@
+.rust {
+  color: rgba(255, 102, 0, 0.945);
+}
+.yellow {
+  color: rgb(255, 196, 0);
+}
+.card {
+  border-color: rgb(255, 196, 0);
+  border-width: 5px;
+  text-align: center;
+}
