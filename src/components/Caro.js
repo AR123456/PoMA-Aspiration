@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+// import Relax from "./components/Relax";
 import {
   Carousel,
   CarouselItem,
@@ -11,12 +14,17 @@ const items = [
   {
     id: 1,
     altText: "Slide 1",
-    caption: "Slide 1"
+    caption: "Pause and Relax…"
   },
   {
     id: 2,
-    altText: "Slide 2",
-    caption: "Slide 2"
+    altText: "Slide 2"
+    // caption: (
+    //   <div>
+    //     {" "}
+    //     <Route exact path="/relax" component={Relax} />
+    //   </div>
+    // )
   },
   {
     id: 3,

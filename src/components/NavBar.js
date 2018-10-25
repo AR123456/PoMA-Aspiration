@@ -30,6 +30,17 @@ const NavBar = props => (
           Caro
         </Link>
       </NavItem>
+
+      <NavItem
+        className={
+          window.location.pathname === "/relax" ? "nav-item active" : "nav-item"
+        }
+      >
+        <Link to="/relax" className="nav-link">
+          Relax
+        </Link>
+      </NavItem>
+
       <NavItem>
         <NavLink href="#">Another Link</NavLink>
       </NavItem>
