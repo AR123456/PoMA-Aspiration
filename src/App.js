@@ -12,6 +12,7 @@ import Player from "./components/Player";
 import PicGrid from "./components/PicGrid";
 import Home from "./components/Home";
 import Relax from "./components/Relax";
+import PandR from "./components/PandR";
 
 const App = () => (
   <Router>
@@ -19,6 +20,7 @@ const App = () => (
       <NavBar />
       <Route exact path="/" component={Home} />
       <Route exact path="/home" component={Home} />
+      <Route exact path="/pandr" component={PandR} />
       <Route exact path="/caro" component={Caro} />
       <Route exact path="/Relax" component={Relax} />
     </div>

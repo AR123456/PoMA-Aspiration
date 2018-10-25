@@ -20,17 +20,15 @@ const NavBar = props => (
           Home
         </Link>
       </NavItem>
-
       <NavItem
         className={
-          window.location.pathname === "/caro" ? "nav-item active" : "nav-item"
+          window.location.pathname === "/pandr" ? "nav-item active" : "nav-item"
         }
       >
-        <Link to="/caro" className="nav-link">
-          Caro
+        <Link to="/pandr" className="nav-link">
+          Pause and Relax
         </Link>
       </NavItem>
-
       <NavItem
         className={
           window.location.pathname === "/relax" ? "nav-item active" : "nav-item"
@@ -41,14 +39,23 @@ const NavBar = props => (
         </Link>
       </NavItem>
 
-      <NavItem>
+      <NavItem
+        className={
+          window.location.pathname === "/caro" ? "nav-item active" : "nav-item"
+        }
+      >
+        <Link to="/caro" className="nav-link">
+          Caro
+        </Link>
+      </NavItem>
+      {/* <NavItem>
         <NavLink href="#">Another Link</NavLink>
       </NavItem>
       <NavItem>
         <NavLink disabled href="#">
           Disabled Link
         </NavLink>
-      </NavItem>
+      </NavItem> */}
     </Nav>
   </div>
 );
