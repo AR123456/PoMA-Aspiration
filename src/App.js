@@ -1,43 +1,38 @@
-import React, { Component } from "react";
-import "./App.css";
-import { Container, Row, Col } from "reactstrap";
+import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+// import Chosen from "./pages/Chosen";
+import Home from "./pages/Home";
+import Images from "./pages/Images";
+import Inst from "./pages/Inst";
+import Form from "./pages/Form";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Wrapper from "./components/Wrapper";
 
-import Caro from "./components/Caro";
-import Frm from "./components/Frm";
-import Grid from "./components/PicGrid";
-
-import NavBar from "./components/NavBar";
-import Player from "./components/Player";
-import PicGrid from "./components/PicGrid";
-import Home from "./components/Home";
-import Relax from "./components/Relax";
-import PandR from "./components/PandR";
+import ControlledCarousel from "./pages/ControlledCarousel";
 
 const App = () => (
   <Router>
     <div>
-      <NavBar />
-      <Route exact path="/" component={Home} />
-      <Route exact path="/home" component={Home} />
-      <Route exact path="/pandr" component={PandR} />
-      <Route exact path="/caro" component={Caro} />
-      <Route exact path="/Relax" component={Relax} />
+      <Navbar />
+      <Wrapper>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/home" component={Home} />
+
+        <Route
+          exact
+          path="/controlledcarousel"
+          component={ControlledCarousel}
+        />
+        {/* <Route exact path="/chosen" component={Chosen} /> */}
+        <Route exact path="/inst" component={Inst} />
+        <Route exact path="/form" component={Form} />
+        <Route exact path="/images" component={Images} />
+      </Wrapper>
+
+      <Footer />
     </div>
   </Router>
 );
-// class App extends Component {
-//   render() {
-//     return (
-//       <Container>
-//         <NavBar />
-//         <Jumbo />
-//         <Caro />
-//         <Frm />
-//         <Grid />
-//       </Container>
-//     );
-//   }
-// }
 
 export default App;

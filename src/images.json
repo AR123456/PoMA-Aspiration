@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "name": "ball",
+    "image": "./images/ball.jpg"
+  },
+  {
+    "id": 2,
+    "name": "fallroad",
+    "image": "./images/fallroad.jpg"
+  },
+  {
+    "id": 3,
+    "name": "bird",
+    "image": "./images/bird.jpg"
+  },
+  {
+    "id": 4,
+    "name": "deer",
+    "image": "./images/deer.jpg"
+  },
+  {
+    "id": 5,
+    "name": "bigcats",
+    "image": "./images/bigcats.jpg"
+  },
+
+  {
+    "id": 6,
+    "name": "flower",
+    "image": "./images/flower.jpg"
+  }
+]
