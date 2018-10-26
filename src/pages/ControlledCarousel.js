@@ -113,53 +113,50 @@ class ControlledCarousel extends Component {
                 isVisible={true}
               >
                 <div>
-                  <h1>Choose with your heart</h1>
+                  <h1>
+                    <img src="../images/heart.jpg" alt="hands" hspace="20" />
+                    <span className="image" style={{ fontSize: 50 }}>
+                      Choose with your heart
+                    </span>
+                  </h1>
                 </div>
               </Animated>
               <Animated
-                animationIn="fadeInRight"
+                animationIn="fadeIn"
                 animationInDelay="2000"
                 animationOut="fadeOut"
                 isVisible={true}
               >
                 <div>
                   <h1>On the next screen, images appear.</h1>
+                  <h1>
+                    Look at each, then click the <b>one</b>:
+                  </h1>
                 </div>
               </Animated>
               <Animated
-                animationIn="fadeInRight"
+                animationIn="fadeIn"
                 animationInDelay="3000"
                 animationOut="fadeOut"
                 isVisible={true}
               >
                 <div>
-                  <h1>
-                    Look at each, find one you feel drawn to or that sparks
-                    curiosity
-                  </h1>
-                </div>
-              </Animated>
-              <Animated
-                animationIn="fadeInRight"
-                animationInDelay="4000"
-                animationOut="fadeOut"
-                isVisible={true}
-              >
-                <div>
+                  <h1>you feel drawn to</h1>
+                  <h1> or </h1>
+                  <h1> that sparks curiosity</h1>
+                  <br />
                   <h1>No need to overthink it, go with your gut.</h1>
                 </div>
               </Animated>
+
               <Animated
-                animationIn="fadeInRight"
+                animationIn="fadeIn"
                 animationInDelay="5000"
                 animationOut="fadeOut"
                 isVisible={true}
               >
-                <div>
-                  <h1>When you have decided click on the Aspiration button</h1>
-                </div>
-                <Link to="/form" className="nav-link">
-                  <button>Images </button>
+                <Link to="/images" className="nav-link">
+                  <button>See Images </button>
                 </Link>
               </Animated>
             </Carousel.Caption>

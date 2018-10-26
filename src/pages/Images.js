@@ -34,6 +34,12 @@ class Images extends React.Component {
             renderImage={this.renderImage}
           />
         ))}
+        <div>
+          <h1>
+            On click remember image show inst page then next page render image
+            with inst thne image with form
+          </h1>
+        </div>
         {/* <ImageForm /> */}
         <Link to="/inst" className="nav-link">
           <button>Aspiration</button>
