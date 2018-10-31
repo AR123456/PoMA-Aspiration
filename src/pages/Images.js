@@ -18,6 +18,7 @@ class Images extends React.Component {
     // Filter this.state.images for images that is  equal to the id of image clicked
     const images = this.state.images.filter(image => image.id === id);
     // Set this.state.images equal to the new images array
+
     this.setState({ images });
   };
 
@@ -42,7 +43,7 @@ class Images extends React.Component {
         </div>
         {/* <ImageForm /> */}
         <Link to="/inst" className="nav-link">
-          <button>Aspiration</button>
+          <button>Instructions></button>
         </Link>
       </Wrapper>
     );

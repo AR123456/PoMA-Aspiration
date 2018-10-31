@@ -71,18 +71,16 @@ class ControlledCarousel extends Component {
                   </h1>
                 </div>
               </Animated>
-              <Animated
+              {/* <Animated
                 animationIn="fadeInRight"
                 animationInDelay="1000"
                 animationOut="fadeOut"
                 isVisible={true}
               >
-                <div>
-                  <h1>…From head to toes or</h1>
-                </div>
-              </Animated>
+                
+              </Animated> */}
               <Animated
-                animationIn="fadeInRight"
+                animationIn="fadeIn"
                 animationInDelay="2000"
                 animationOut="fadeOut"
                 isVisible={true}
@@ -90,17 +88,21 @@ class ControlledCarousel extends Component {
                 <div>
                   <h1>…Starting with open hands or</h1>
                 </div>
+                <div>
+                  <h1>…From head to toes or</h1>
+                </div>
+                <div>
+                  <h1> …Starting with the breath</h1>
+                </div>
               </Animated>
-              <Animated
+              {/* <Animated
                 animationIn="fadeInRight"
                 animationInDelay="3000"
                 animationOut="fadeOut"
                 isVisible={true}
               >
-                <div>
-                  <h1> …Starting with the breath</h1>
-                </div>
-              </Animated>
+                
+              </Animated> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -174,6 +176,7 @@ class ControlledCarousel extends Component {
           {/* <Carousel.Item>
             <Hero>
               <Link to="/form" className="nav-link" />
+      
             </Hero>
             <Carousel.Caption>
               <h1>4</h1>
