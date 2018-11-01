@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import "./ImageForm.css";
-import Title from "../Title";
 
 class ImageForm extends Component {
   // Setting the component's initial state

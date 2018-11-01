@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Container from "../components/Container";
+// import { Col } from "react-bootstrap";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import { Link } from "react-router-dom";
@@ -20,7 +21,7 @@ const Home = () => (
               explaining the practice described in the following slides] */}
             </h2>
 
-            <iframe src="./images/rain.mp4" />
+            <iframe src="./images/rain.mp4" title="#" />
           </Col>
           <Col size="md-6">
             <h2>
@@ -29,32 +30,23 @@ const Home = () => (
               describing their own use of the practice described in the flowing */}
               {/* slides.] */}
             </h2>
-            <iframe src="./images/snow.mp4"> </iframe>
+            <iframe src="./images/snow.mp4" title="#">
+              {" "}
+            </iframe>
           </Col>
         </Row>
         <button
           className={
-            window.location.pathname === "/controlledcarousel"
+            window.location.pathname === "/intro"
               ? "nav-item active"
               : "nav-item"
           }
         >
-          <Link to="/controlledcarousel" className="nav-link">
+          <Link to="/intro" className="nav-link">
             {" "}
             Next
           </Link>
         </button>
-        {/* <button
-          className={
-            window.location.pathname === "/relax"
-              ? "nav-item active"
-              : "nav-item"
-          }
-        >
-          <Link to="/relax" className="nav-link">
-            Next
-          </Link>
-        </button> */}
       </Container>
     </Hero>
   </div>

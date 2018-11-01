@@ -25,13 +25,13 @@ const Navbar = props => (
 
         <li
           className={
-            window.location.pathname === "/controlledcarousel"
+            window.location.pathname === "/intro"
               ? "nav-item active"
               : "nav-item"
           }
         >
-          <Link to="/controlledcarousel" className="nav-link">
-            ControlledCarousel
+          <Link to="/intro" className="nav-link">
+            Intro
           </Link>
         </li>
         {/* <li

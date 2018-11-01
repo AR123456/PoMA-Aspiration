@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import { Carousel, Row, Col } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 import Hero from "../components/Hero";
 import { Animated } from "react-animated-css";
 import { Link } from "react-router-dom";
 
-// import ".ControlledCarousel.css";
-
-class ControlledCarousel extends Component {
+class Intro extends Component {
   constructor(props, context) {
     super(props, context);
 
@@ -19,7 +17,6 @@ class ControlledCarousel extends Component {
   }
 
   handleSelect(selectedIndex, e) {
-    // alert(`selected=${selectedIndex}, direction=${e.direction}`);
     this.setState({
       index: selectedIndex,
       direction: e.direction
@@ -71,14 +68,6 @@ class ControlledCarousel extends Component {
                   </h1>
                 </div>
               </Animated>
-              {/* <Animated
-                animationIn="fadeInRight"
-                animationInDelay="1000"
-                animationOut="fadeOut"
-                isVisible={true}
-              >
-                
-              </Animated> */}
               <Animated
                 animationIn="fadeIn"
                 animationInDelay="500"
@@ -95,19 +84,11 @@ class ControlledCarousel extends Component {
                   <h1> …Starting with the breath</h1>
                 </div>
               </Animated>
-              {/* <Animated
-                animationIn="fadeInRight"
-                animationInDelay="3000"
-                animationOut="fadeOut"
-                isVisible={true}
-              >
-                
-              </Animated> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <Hero backgroundImage="./images/fusco.jpg" />
-            <Carousel.Caption style={{ paddingBottom: 200 }}>
+            <Carousel.Caption style={{ paddingBottom: 100 }}>
               <Animated
                 animationIn="fadeIn"
                 animationInDelay="1000"
@@ -148,105 +129,12 @@ class ControlledCarousel extends Component {
                   <button>See Images </button>
                 </Link>
               </Animated>
-              {/* <Animated
-                animationIn="fadeIn"
-                animationInDelay="3000"
-                animationOut="fadeOut"
-                isVisible={true}
-              >
-                <div>
-                  <h1>you feel drawn to</h1>
-                  <h1> or </h1>
-                  <h1> that sparks curiosity</h1>
-                  <br />
-                  <h1>No need to overthink it, go with your gut.</h1>
-                </div>
-              </Animated> */}
-
-              {/* <Animated
-                animationIn="fadeIn"
-                animationInDelay="5000"
-                animationOut="fadeOut"
-                isVisible={true}
-              >
-                <Link to="/imagepage" className="nav-link">
-                  <br />
-                  <button>See Images </button>
-                </Link>
-              </Animated> */}
             </Carousel.Caption>
           </Carousel.Item>
-          {/* <Carousel.Item>
-            <Hero backgroundImage="./images/ball.jpg" />
-            <Carousel.Caption>
-              <h1>3</h1>
-              <Link to="/inst" className="nav-link">
-                <button>Aspiration</button>
-              </Link>
-            </Carousel.Caption>
-          </Carousel.Item> */}
-
-          {/* <Carousel.Item>
-            <Hero>
-              <Link to="/form" className="nav-link" />
-      
-            </Hero>
-            <Carousel.Caption>
-              <h1>4</h1>
-              <Link to="/inst" className="nav-link">
-                <button>Aspiration</button>
-              </Link>
-            </Carousel.Caption>
-          </Carousel.Item> */}
-
-          {/* <Carousel.Item>
-            <Hero backgroundImage="./images/bird.jpg" />
-
-            <Carousel.Caption>
-              <h1>5</h1>
-              <Link to="/inst" className="nav-link">
-                <button>Aspiration</button>
-              </Link>
-            </Carousel.Caption>
-          </Carousel.Item> */}
-
-          {/* <Carousel.Item>
-            <Hero backgroundImage="./images/deer.jpg" />
-
-            <Carousel.Caption>
-              <h1>6</h1>
-              <Link to="/inst" className="nav-link">
-                <button>Aspiration</button>
-              </Link>
-            </Carousel.Caption>
-          </Carousel.Item> */}
-
-          {/* <Carousel.Item>
-            <Hero backgroundImage="./images/elephant.jpg" />
-
-            <Carousel.Caption>
-              <h1>7</h1>
-              <Link to="/inst" className="nav-link">
-                <button>Aspiration</button>
-              </Link>
-            </Carousel.Caption>
-          </Carousel.Item> */}
-
-          {/* <Carousel.Item>
-            <Hero backgroundImage="./images/flower.jpg" />
-
-            <Carousel.Caption>
-              <h1>8</h1>
-              <Link to="/inst" className="nav-link">
-                <button>Aspiration</button>
-              </Link>
-            </Carousel.Caption>
-          </Carousel.Item> */}
         </Carousel>
       </div>
     );
   }
 }
 
-// render(<ControlledCarousel />);
-export default ControlledCarousel;
+export default Intro;

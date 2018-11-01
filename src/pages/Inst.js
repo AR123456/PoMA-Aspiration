@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import Hero from "../components/Hero";
-import { Carousel, Row, Col } from "react-bootstrap";
-import Container from "../components/Container";
-
+import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Animated } from "react-animated-css";
-import ControlledCarousel from "./ControlledCarousel";
+import ImageCard from "../components/ImageCard";
 
 class Inst extends Component {
   constructor(props, context) {
@@ -32,18 +30,6 @@ class Inst extends Component {
           direction={direction}
           onSelect={this.handleSelect}
         >
-          {/* <Carousel.Item>
-            <Hero backgroundImage="./images/fusco.jpg" />
-            <Carousel.Caption>
-              <Animated
-                animationIn="fadeIn"
-                animationOut="fadeOut"
-                isVisible={true}
-              >
-                <div style={{ paddingBottom: 400 }} />
-              </Animated>
-            </Carousel.Caption>
-          </Carousel.Item> */}
           <Carousel.Item>
             <Hero backgroundImage="./images/fusco.jpg" />
             <Carousel.Caption style={{ paddingBottom: 300 }}>
@@ -68,14 +54,6 @@ class Inst extends Component {
                   <p>…towards self, towards others, or both?</p>
                 </h2>
               </Animated>
-              {/* <Animated
-              animationIn="fadeInRight"
-              animationInDelay="1000"
-              animationOut="fadeOut"
-              isVisible={true}
-            >
-              
-            </Animated> */}
               <Animated
                 animationIn="fadeIn"
                 animationInDelay="500"
@@ -84,25 +62,19 @@ class Inst extends Component {
               >
                 <div />
               </Animated>
-              {/* <Animated
-              animationIn="fadeInRight"
-              animationInDelay="3000"
-              animationOut="fadeOut"
-              isVisible={true}
-            >
-              
-            </Animated> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <Hero backgroundImage="./images/fusco.jpg" />
-            <Carousel.Caption style={{ paddingBottom: 200 }}>
+            <Hero backgroundImage="#" />
+            <Carousel.Caption style={{ color: "black", paddingBottom: 100 }}>
               <Animated
                 animationIn="fadeIn"
                 animationInDelay="1000"
                 animationOut="fadeOut"
                 isVisible={true}
               >
+                <br />
+                <ImageCard />
                 <h2>
                   Jot down a few words to capture connections between the image
                   and your aspiration for change.
@@ -133,73 +105,4 @@ class Inst extends Component {
     );
   }
 }
-// const Inst = () => (
-//   <div>
-//     <Hero backgroundImage="./images/fusco.jpg">
-//       <Container style={{ marginTop: 30 }}>
-//         <Row>
-//           <h2>
-//             <Col size="md-12">
-//               <Animated
-//                 animationIn="fadeIn"
-//                 animationOut="fadeOut"
-//                 isVisible={true}
-//               >
-//                 {/* <p>
-//                   The image you chose will be waiting for you on the next
-//                   screen. As you look, ask:
-//                 </p> */}
-//               </Animated>
-//               <Animated
-//                 animationIn="fadeIn "
-//                 animationOut="fadeOut"
-//                 isVisible={true}
-//               >
-//                 {/* <p>
-//                   What connections are there with a change I’d like to make in
-//                   the direction of….
-//                 </p>
-//                 <p>….greater compassion…</p>
-//                 <p> …being kinder…</p>
-//                 <p> …increased patience…</p>
-//                 <p> …more generosity… </p>
-//                 <p>…towards self, towards others, or both?</p> */}
-//                 <br />
-//               </Animated>
-//               <Animated
-//                 animationIn="fadeIn"
-//                 animationInDelay="6000"
-//                 animationOut="fadeOut"
-//                 isVisible={true}
-//               >
-//                 <br />
-//                 <h2>
-//                   Jot down a few words to capture connections between the image
-//                   and your aspiration for change.
-//                 </h2>
-//                 <h2>
-//                   If no thoughts come, just relax and rest your eyes on the
-//                   image.
-//                 </h2>
-//                 <h2>Thoughts may come later, or tomorrow.</h2>
-//               </Animated>
-//             </Col>
-//           </h2>
-//         </Row>
-
-//         <Animated
-//           animationIn="fadeIn"
-//           animationInDelay="6000"
-//           animationOut="fadeOut"
-//           isVisible={true}
-//         >
-//           <br />
-//           {/* <Link to="/form" className="nav-link">
-//             <button>Choose Image</button>
-//           </Link> */}
-//         </Animated>
-//       </Container>
-//     </Hero>
-//   </div>
-// );
 export default Inst;

@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 
-import ControlledCarousel from "./pages/ControlledCarousel";
+import Intro from "./pages/Intro";
 
 const App = () => (
   <Router>
@@ -19,11 +19,7 @@ const App = () => (
         <Route exact path="/" component={Home} />
         <Route exact path="/home" component={Home} />
 
-        <Route
-          exact
-          path="/controlledcarousel"
-          component={ControlledCarousel}
-        />
+        <Route exact path="/intro" component={Intro} />
         {/* <Route exact path="/chosen" component={Chosen} /> */}
         <Route exact path="/inst" component={Inst} />
         <Route exact path="/form" component={Form} />
