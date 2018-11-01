@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 // import Chosen from "./pages/Chosen";
 import Home from "./pages/Home";
-import Images from "./pages/Images";
+import ImagePage from "./pages/ImagePage";
 import Inst from "./pages/Inst";
 import Form from "./pages/Form";
 import Navbar from "./components/Navbar";
@@ -27,7 +27,7 @@ const App = () => (
         {/* <Route exact path="/chosen" component={Chosen} /> */}
         <Route exact path="/inst" component={Inst} />
         <Route exact path="/form" component={Form} />
-        <Route exact path="/images" component={Images} />
+        <Route exact path="/imagepage" component={ImagePage} />
       </Wrapper>
 
       <Footer />

@@ -40,7 +40,7 @@ class ControlledCarousel extends Component {
             <Hero backgroundImage="./images/fusco.jpg" />
             <Carousel.Caption>
               <Animated
-                animationIn="fadeInRight"
+                animationIn="fadeIn"
                 animationOut="fadeOut"
                 isVisible={true}
               >
@@ -54,7 +54,7 @@ class ControlledCarousel extends Component {
             <Hero backgroundImage="./images/fusco.jpg" />
             <Carousel.Caption style={{ paddingBottom: 300 }}>
               <Animated
-                animationIn="fadeInLeft"
+                animationIn="fadeIn"
                 animationOut="fadeOut"
                 isVisible={true}
               >
@@ -81,7 +81,7 @@ class ControlledCarousel extends Component {
               </Animated> */}
               <Animated
                 animationIn="fadeIn"
-                animationInDelay="2000"
+                animationInDelay="500"
                 animationOut="fadeOut"
                 isVisible={true}
               >
@@ -109,7 +109,7 @@ class ControlledCarousel extends Component {
             <Hero backgroundImage="./images/fusco.jpg" />
             <Carousel.Caption style={{ paddingBottom: 200 }}>
               <Animated
-                animationIn="fadeInLeft"
+                animationIn="fadeIn"
                 animationInDelay="1000"
                 animationOut="fadeOut"
                 isVisible={true}
@@ -125,7 +125,7 @@ class ControlledCarousel extends Component {
               </Animated>
               <Animated
                 animationIn="fadeIn"
-                animationInDelay="2000"
+                animationInDelay="1000"
                 animationOut="fadeOut"
                 isVisible={true}
               >
@@ -135,8 +135,20 @@ class ControlledCarousel extends Component {
                     Look at each, then click the <b>one</b>:
                   </h1>
                 </div>
+                <div>
+                  <h1>you feel drawn to</h1>
+                  <h1> or </h1>
+                  <h1> that sparks curiosity</h1>
+                  <br />
+                  <h1>No need to overthink it, go with your gut.</h1>
+                </div>
+                <br />
+                <Link to="/imagepage" className="nav-link">
+                  <br />
+                  <button>See Images </button>
+                </Link>
               </Animated>
-              <Animated
+              {/* <Animated
                 animationIn="fadeIn"
                 animationInDelay="3000"
                 animationOut="fadeOut"
@@ -149,18 +161,19 @@ class ControlledCarousel extends Component {
                   <br />
                   <h1>No need to overthink it, go with your gut.</h1>
                 </div>
-              </Animated>
+              </Animated> */}
 
-              <Animated
+              {/* <Animated
                 animationIn="fadeIn"
                 animationInDelay="5000"
                 animationOut="fadeOut"
                 isVisible={true}
               >
-                <Link to="/images" className="nav-link">
+                <Link to="/imagepage" className="nav-link">
+                  <br />
                   <button>See Images </button>
                 </Link>
-              </Animated>
+              </Animated> */}
             </Carousel.Caption>
           </Carousel.Item>
           {/* <Carousel.Item>

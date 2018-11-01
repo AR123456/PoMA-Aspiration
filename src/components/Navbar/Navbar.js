@@ -69,12 +69,12 @@ const Navbar = props => (
         </li>
         <li
           className={
-            window.location.pathname === "/images"
+            window.location.pathname === "/imagepage"
               ? "nav-item active"
               : "nav-item"
           }
         >
-          <Link to="/images" className="nav-link">
+          <Link to="/imagepage" className="nav-link">
             Images
           </Link>
         </li>

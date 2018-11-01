@@ -27,16 +27,6 @@ class ImageForm extends Component {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
 
-    // This alert should be changes to that on submit the text is rendered to the PDF to print it.
-    // alert(`
-    //   Aspiration for building a new habit of: ${this.state.q1}
-    //   I will bring at least a tiny amount more ${
-    //     this.state.q2
-    //   }to moments when my habit has been ${this.state.q3} by pausing when I
-    //   recognize ${
-    //     this.state.q4
-    //   }. This image will remind me to PAUSE, RELAX, and  ${this.state.q5}.
-    // `)
     window.print();
     this.setState({
       q1: "",
@@ -51,6 +41,8 @@ class ImageForm extends Component {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
       <div>
+        <h1> TODO Render the on click image from the image page here </h1>
+        <h1> update the form with the drop down and helper text from Ellen </h1>
         <form className="form">
           <label>Aspiration for building a new habit of: </label>
           <input
