@@ -97,7 +97,7 @@ class Intro extends Component {
               >
                 <div>
                   <h1>
-                    <img src="../images/heart.jpg" alt="hands" hspace="20" />
+                    <img src="../images/heart.jpg" alt="heart" hspace="20" />
                     <span className="image" style={{ fontSize: 50 }}>
                       Choose with your heart
                     </span>
