@@ -17,9 +17,9 @@ class ImagePage extends React.Component {
         <div>
           <h1 />
         </div>
-        <Link to="/inst" className="nav-link">
+        {/* <Link to="/inst" className="nav-link">
           <button>Instructions</button>
-        </Link>
+        </Link> */}
       </Wrapper>
     );
   }

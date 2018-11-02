@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Container from "../components/Container";
-// import { Col } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import { Link } from "react-router-dom";
@@ -35,18 +35,20 @@ const Home = () => (
             </iframe>
           </Col>
         </Row>
-        <button
+        <Button
           className={
             window.location.pathname === "/intro"
               ? "nav-item active"
               : "nav-item"
           }
+          bsStyle="default"
+          bsSize="large"
         >
           <Link to="/intro" className="nav-link">
             {" "}
             Next
           </Link>
-        </button>
+        </Button>
       </Container>
     </Hero>
   </div>
