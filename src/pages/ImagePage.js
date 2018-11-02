@@ -15,10 +15,7 @@ class ImagePage extends React.Component {
           <ImagePageCard id={image.id} key={image.id} image={image.image} />
         ))}
         <div>
-          <h1>
-            TODO the click on image will save that image put on the form page
-            for later, send to instructions right now
-          </h1>
+          <h1 />
         </div>
         <Link to="/inst" className="nav-link">
           <button>Instructions</button>
