@@ -8,6 +8,7 @@ import Form from "./Form";
 import ImageCard from "../components/ImageCard";
 import PageFour from "./PageFour";
 import PageFive from "./PageFive";
+import PageSeven from "./PageSeven";
 class Intro extends Component {
   constructor(props, context) {
     super(props, context);
@@ -65,38 +66,9 @@ class Intro extends Component {
             <ImagePage />
           </Carousel.Item>
           <Carousel.Item>
-            <Hero backgroundImage="./images/seymour.jpg" />
-            <Carousel.Caption style={{ paddingBottom: 300 }}>
-              <Animated
-                animationIn="fadeIn"
-                animationOut="fadeOut"
-                isVisible={true}
-              >
-                <h2>
-                  <p>
-                    The image you chose will be waiting for you on the next
-                    screen. As you look, ask:
-                  </p>
-                  <p>
-                    What connections are there with a change I’d like to make in
-                    the direction of….
-                  </p>
-                  <p>….greater compassion…</p>
-                  <p> …being kinder…</p>
-                  <p> …increased patience…</p>
-                  <p> …more generosity… </p>
-                  <p>…towards self, towards others, or both?</p>
-                </h2>
-              </Animated>
-              <Animated
-                animationIn="fadeIn"
-                animationInDelay="500"
-                animationOut="fadeOut"
-                isVisible={true}
-              >
-                <div />
-              </Animated>
-            </Carousel.Caption>
+            <Hero backgroundImage="./images/seymour.jpg">
+              <PageSeven />
+            </Hero>
           </Carousel.Item>
           <Carousel.Item>
             <Hero backgroundImage="#" />
@@ -109,15 +81,12 @@ class Intro extends Component {
               >
                 <br />
                 <ImageCard />
-                <h2>
+                <h2 style={{ textAlign: "left" }}>
                   Jot down a few words to capture connections between the image
-                  and your aspiration for change.
+                  and your aspiration for change.If no thoughts come, just relax
+                  and rest your eyes on the image.Thoughts may come later, or
+                  tomorrow.
                 </h2>
-                <h2>
-                  If no thoughts come, just relax and rest your eyes on the
-                  image.
-                </h2>
-                <h2>Thoughts may come later, or tomorrow.</h2>
               </Animated>
               <Animated
                 animationIn="fadeIn"
@@ -130,7 +99,7 @@ class Intro extends Component {
                 <br />
                 <Link to="/form" className="nav-link">
                   <Button bsStyle="primary" bsSize="large">
-                    Go To Form{" "}
+                    Go On
                   </Button>
                 </Link>
               </Animated>

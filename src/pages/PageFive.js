@@ -31,9 +31,9 @@ const PageFive = () => (
         </Row>
         <Row>
           <Col sm={6} xsOffset={4}>
-            <h2 className="rust">you feel drawn to</h2>
+            <h2 style={{ color: "#F07407" }}>you feel drawn to</h2>
             <h2> or </h2>
-            <h2 className="yellow"> that sparks curiosity</h2>
+            <h2 style={{ color: "#f0d907" }}> that sparks curiosity</h2>
           </Col>
         </Row>
 

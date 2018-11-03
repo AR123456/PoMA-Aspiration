@@ -8,9 +8,12 @@ import { Link } from "react-router-dom";
 
 const Home = () => (
   <div>
+    <br />
     <Hero backgroundImage="./images/umanoide.jpg">
       <h1>Path of Mindful Activity:</h1>
+      <br />
       <h2>The nitty-gritty of compassion in action</h2>
+      <br />
       <Container>
         <Row />
         <Row>
@@ -35,6 +38,7 @@ const Home = () => (
             </iframe>
           </Col>
         </Row>
+        <br />
         <Link to="/intro" className="nav-link">
           <Button bsStyle="primary" bsSize="large">
             Next{" "}

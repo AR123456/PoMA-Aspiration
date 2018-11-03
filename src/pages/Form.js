@@ -4,12 +4,13 @@ import {
   ControlLabel,
   FormControl,
   HelpBlock,
+  InputGroup,
   Button
 } from "react-bootstrap";
 import ImageCard from "../components/ImageCard";
 // import ImageForm from "../components/ImageForm";
 import Wrapper from "../components/Wrapper";
-
+import "./Form.css";
 import { Jumbotron } from "react-bootstrap";
 class Form extends React.Component {
   constructor(props, context) {
@@ -62,6 +63,7 @@ class Form extends React.Component {
               value={this.state.q1}
               placeholder="Describe the situation you want to react to differently and the new response you want to practice.  Be as specific as you can."
               onChange={this.handleChange}
+              componentClass="textarea"
             />
             <FormControl.Feedback />
             {/* <HelpBlock>Validation is based on string length.</HelpBlock> */}
@@ -109,6 +111,7 @@ class Form extends React.Component {
               value={this.state.q3}
               placeholder="Describe the specific habit that you want to change."
               onChange={this.handleChange}
+              componentClass="textarea"
             />
             <FormControl.Feedback />
             {/* <HelpBlock>Validation is based on string length.</HelpBlock> */}
@@ -119,13 +122,16 @@ class Form extends React.Component {
           >
             <ControlLabel>
               {" "}
-              <h2>by pausing when I recognize</h2>{" "}
+              <h2>
+                by <strong>pausing</strong> when I recognize
+              </h2>{" "}
             </ControlLabel>
             <FormControl
               type="text"
               value={this.state.q4}
               placeholder="Describe the particular body sensations or behavior that you want to recognize as signals that the habit is “launching.”"
               onChange={this.handleChange}
+              componentClass="textarea"
             />
             <FormControl.Feedback />
             {/* <HelpBlock>Validation is based on string length.</HelpBlock> */}
@@ -135,18 +141,27 @@ class Form extends React.Component {
             validationState={this.getValidationState()}
           >
             <ControlLabel>
-              <h2>This image will remind me to PAUSE, RELAX, and </h2>
+              <h2>
+                This image will remind me to <strong>PAUSE, RELAX,</strong> and{" "}
+              </h2>
             </ControlLabel>
             <FormControl
               type="text"
               value={this.state.q5}
               placeholder="Describe what you want the image above to remind you to do differently with your body in that moment, before you react."
               onChange={this.handleChange}
+              componentClass="textarea"
             />
             <FormControl.Feedback />
             {/* <HelpBlock>Validation is based on string length.</HelpBlock> */}
           </FormGroup>
-          <Button onClick={this.handleFormSubmit}>Print</Button>
+          <Button
+            bsStyle="primary"
+            bsSize="large"
+            onClick={this.handleFormSubmit}
+          >
+            Print
+          </Button>
         </form>
       </Wrapper>
     );
