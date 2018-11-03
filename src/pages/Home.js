@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => (
   <div>
-    <Hero backgroundImage="./images/fusco.jpg">
+    <Hero backgroundImage="./images/umanoide.jpg">
       <h1>Path of Mindful Activity:</h1>
       <h2>The nitty-gritty of compassion in action</h2>
       <Container>
@@ -35,20 +35,11 @@ const Home = () => (
             </iframe>
           </Col>
         </Row>
-        <Button
-          className={
-            window.location.pathname === "/intro"
-              ? "nav-item active"
-              : "nav-item"
-          }
-          bsStyle="default"
-          bsSize="large"
-        >
-          <Link to="/intro" className="nav-link">
-            {" "}
-            Next
-          </Link>
-        </Button>
+        <Link to="/intro" className="nav-link">
+          <Button bsStyle="primary" bsSize="large">
+            Next{" "}
+          </Button>
+        </Link>
       </Container>
     </Hero>
   </div>

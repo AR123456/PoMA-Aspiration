@@ -31,7 +31,7 @@ class Inst extends Component {
           onSelect={this.handleSelect}
         >
           <Carousel.Item>
-            <Hero backgroundImage="./images/fusco.jpg" />
+            <Hero backgroundImage="./images/burden.jpg" />
             <Carousel.Caption style={{ paddingBottom: 300 }}>
               <Animated
                 animationIn="fadeIn"

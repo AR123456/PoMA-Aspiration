@@ -4,8 +4,10 @@ import Hero from "../components/Hero";
 import { Animated } from "react-animated-css";
 import { Link } from "react-router-dom";
 import ImagePage from "./ImagePage";
+import Form from "./Form";
 import ImageCard from "../components/ImageCard";
-
+import PageFour from "./PageFour";
+import PageFive from "./PageFive";
 class Intro extends Component {
   constructor(props, context) {
     super(props, context);
@@ -36,7 +38,7 @@ class Intro extends Component {
           onSelect={this.handleSelect}
         >
           <Carousel.Item>
-            <Hero backgroundImage="./images/fusco.jpg" />
+            <Hero backgroundImage="./images/czerwinski.jpg" />
             <Carousel.Caption>
               <Animated
                 animationIn="fadeIn"
@@ -50,132 +52,20 @@ class Intro extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <Hero backgroundImage="./images/fusco.jpg" />
-            <Carousel.Caption style={{ paddingBottom: 300 }}>
-              <Animated
-                animationIn="fadeIn"
-                animationOut="fadeOut"
-                isVisible={true}
-              >
-                <div>
-                  <h1>
-                    <img src="../images/hands.jpg" alt="hands" hspace="20" />
-                    <span
-                      className="image"
-                      className="rust"
-                      style={{ fontSize: 60 }}
-                    >
-                      Relax...
-                    </span>
-                  </h1>
-                </div>
-              </Animated>
-              <Animated
-                animationIn="fadeIn"
-                animationInDelay="500"
-                animationOut="fadeOut"
-                isVisible={true}
-              >
-                <div>
-                  <h1>…Starting with open hands or</h1>
-                </div>
-                <div>
-                  <h1>…From head to toes or</h1>
-                </div>
-                <div>
-                  <h1> …Starting with the breath</h1>
-                </div>
-              </Animated>
-            </Carousel.Caption>
+            <Hero backgroundImage="images/burden.jpg">
+              <PageFour />
+            </Hero>
           </Carousel.Item>
           <Carousel.Item>
-            <Hero backgroundImage="./images/fusco.jpg" />
-            <Carousel.Caption style={{ paddingBottom: 100 }}>
-              <Animated
-                animationIn="fadeIn"
-                animationInDelay="1000"
-                animationOut="fadeOut"
-                isVisible={true}
-              >
-                <div>
-                  <h1>
-                    <img src="../images/hearts.jpg" alt="heart" hspace="20" />
-                    <span className="image" style={{ fontSize: 50 }}>
-                      Choose with your heart
-                    </span>
-                  </h1>
-                </div>
-              </Animated>
-              <Animated
-                animationIn="fadeIn"
-                animationInDelay="1000"
-                animationOut="fadeOut"
-                isVisible={true}
-              >
-                <div>
-                  <h1>On the next screen, images appear.</h1>
-                  <h1>
-                    Look at each, then click the <b>one</b>:
-                  </h1>
-                </div>
-                <div>
-                  <h1>you feel drawn to</h1>
-                  <h1> or </h1>
-                  <h1> that sparks curiosity</h1>
-                  <br />
-                  <h1>No need to overthink it, go with your gut.</h1>
-                </div>
-                <br />
-                {/* <Link to="/imagepage" className="nav-link">
-                  <br />
-                  <button>See Images </button>
-                </Link> */}
-              </Animated>
-            </Carousel.Caption>
+            <Hero backgroundImage="./images/seaman.jpg">
+              <PageFive />
+            </Hero>
           </Carousel.Item>
           <Carousel.Item>
             <ImagePage />
-            {/* <Hero backgroundImage="./images/fusco.jpg" />
-            <Carousel.Caption style={{ paddingBottom: 300 }}>
-            */}
-            {/* <Animated
-                animationIn="fadeIn"
-                animationOut="fadeOut"
-                isVisible={true}
-              >
-                <div>
-                  <h1>
-                    <img src="../images/hands.jpg" alt="hands" hspace="20" />
-                    <span
-                      className="image"
-                      className="rust"
-                      style={{ fontSize: 60 }}
-                    >
-                      Relax...
-                    </span>
-                  </h1>
-                </div>
-              </Animated> */}
-            {/* <Animated
-                animationIn="fadeIn"
-                animationInDelay="500"
-                animationOut="fadeOut"
-                isVisible={true}
-              >
-                <div>
-                  <h1>…Starting with open hands or</h1>
-                </div>
-                <div>
-                  <h1>…From head to toes or</h1>
-                </div>
-                <div>
-                  <h1> …Starting with the breath</h1>
-                </div>
-              </Animated> */}
-            {/* </Carousel.Caption> */}
           </Carousel.Item>
           <Carousel.Item>
-            <Hero backgroundImage="./images/fusco.jpg" />
+            <Hero backgroundImage="./images/seymour.jpg" />
             <Carousel.Caption style={{ paddingBottom: 300 }}>
               <Animated
                 animationIn="fadeIn"
@@ -240,12 +130,16 @@ class Intro extends Component {
                 <br />
                 <Link to="/form" className="nav-link">
                   <Button bsStyle="primary" bsSize="large">
-                    Go On{" "}
+                    Go To Form{" "}
                   </Button>
                 </Link>
               </Animated>
             </Carousel.Caption>
           </Carousel.Item>
+          {/* <Carousel.Item>
+            <Form />
+            
+          </Carousel.Item> */}
         </Carousel>
       </div>
     );
