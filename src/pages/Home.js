@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../components/Hero";
+import Aura from "../components/Aura";
 import Container from "../components/Container";
 import { Button } from "react-bootstrap";
 import Row from "../components/Row";
@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Home = () => (
   <div>
     <br />
-    <Hero backgroundImage="./images/umanoide.jpg">
+    <Aura backgroundImage="./images/umanoide.jpg">
       <h1>Path of Mindful Activity:</h1>
       <br />
       <h2>The nitty-gritty of compassion in action</h2>
@@ -45,7 +45,7 @@ const Home = () => (
           </Button>
         </Link>
       </Container>
-    </Hero>
+    </Aura>
   </div>
 );
 

@@ -1,17 +1,10 @@
 import React from "react";
-import {
-  FormGroup,
-  ControlLabel,
-  FormControl,
-  HelpBlock,
-  InputGroup,
-  Button
-} from "react-bootstrap";
+import { FormGroup, ControlLabel, FormControl, Button } from "react-bootstrap";
 import ImageCard from "../components/ImageCard";
-// import ImageForm from "../components/ImageForm";
+
 import Wrapper from "../components/Wrapper";
 import "./Form.css";
-import { Jumbotron } from "react-bootstrap";
+
 class Form extends React.Component {
   constructor(props, context) {
     super(props, context);

@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Row, Col, Clearfix, Button } from "react-bootstrap";
+import { Grid, Row, Col } from "react-bootstrap";
 import Wrapper from "../components/Wrapper";
 import Container from "../components/Container";
 

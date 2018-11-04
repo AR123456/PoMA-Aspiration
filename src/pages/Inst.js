@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Hero from "../components/Hero";
+import Aura from "../components/Aura";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Animated } from "react-animated-css";
@@ -31,7 +31,7 @@ class Inst extends Component {
           onSelect={this.handleSelect}
         >
           <Carousel.Item>
-            <Hero backgroundImage="./images/burden.jpg" />
+            <Aura backgroundImage="./images/burden.jpg" />
             <Carousel.Caption style={{ paddingBottom: 300 }}>
               <Animated
                 animationIn="fadeIn"
@@ -65,7 +65,7 @@ class Inst extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <Hero backgroundImage="#" />
+            <Aura backgroundImage="#" />
             <Carousel.Caption style={{ color: "black", paddingBottom: 100 }}>
               <Animated
                 animationIn="fadeIn"

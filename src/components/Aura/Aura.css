@@ -1,0 +1,28 @@
+.Aura {
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.Aura * {
+  position: relative;
+  z-index: 2;
+}
+
+.Aura h1,
+.Aura h2 {
+  color: white;
+}
+
+.Aura h1 {
+  font-size: 60px;
+  padding-top: 10px;
+  margin-top: 0;
+}
+.rust {
+  color: #f07407;
+}
+.yellow {
+  color: #f0d907;
+}

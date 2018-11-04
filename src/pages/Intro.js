@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { Carousel, Button } from "react-bootstrap";
-import Hero from "../components/Hero";
+import Aura from "../components/Aura";
 import { Animated } from "react-animated-css";
 import { Link } from "react-router-dom";
 import ImagePage from "./ImagePage";
-import Form from "./Form";
 import ImageCard from "../components/ImageCard";
 import PageFour from "./PageFour";
 import PageFive from "./PageFive";
 import PageSeven from "./PageSeven";
+
 class Intro extends Component {
   constructor(props, context) {
     super(props, context);
@@ -39,7 +39,7 @@ class Intro extends Component {
           onSelect={this.handleSelect}
         >
           <Carousel.Item>
-            <Hero backgroundImage="./images/czerwinski.jpg" />
+            <Aura backgroundImage="./images/czerwinski.jpg" />
             <Carousel.Caption>
               <Animated
                 animationIn="fadeIn"
@@ -53,25 +53,27 @@ class Intro extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <Hero backgroundImage="images/burden.jpg">
+            <Aura backgroundImage="images/burden.jpg">
               <PageFour />
-            </Hero>
+            </Aura>
           </Carousel.Item>
           <Carousel.Item>
-            <Hero backgroundImage="./images/seaman.jpg">
+            <Aura backgroundImage="./images/seaman.jpg">
               <PageFive />
-            </Hero>
+            </Aura>
           </Carousel.Item>
           <Carousel.Item>
-            <ImagePage />
+            <Aura>
+              <ImagePage />
+            </Aura>
           </Carousel.Item>
           <Carousel.Item>
-            <Hero backgroundImage="./images/seymour.jpg">
+            <Aura backgroundImage="./images/seymour.jpg">
               <PageSeven />
-            </Hero>
+            </Aura>
           </Carousel.Item>
           <Carousel.Item>
-            <Hero backgroundImage="#" />
+            <Aura backgroundImage="#" />
             <Carousel.Caption style={{ color: "black", paddingBottom: 100 }}>
               <Animated
                 animationIn="fadeIn"
@@ -83,9 +85,9 @@ class Intro extends Component {
                 <ImageCard />
                 <h2 style={{ textAlign: "left" }}>
                   Jot down a few words to capture connections between the image
-                  and your aspiration for change.If no thoughts come, just relax
-                  and rest your eyes on the image.Thoughts may come later, or
-                  tomorrow.
+                  and your aspiration for change. If no thoughts come, just
+                  relax and rest your eyes on the image.Thoughts may come later,
+                  or tomorrow.
                 </h2>
               </Animated>
               <Animated

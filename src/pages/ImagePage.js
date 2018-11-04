@@ -1,25 +1,30 @@
 import React from "react";
-import ImagePageCard from "../components/ImagePageCard";
+import ImageCard from "../components/ImageCard";
 import Wrapper from "../components/Wrapper";
-import { Link } from "react-router-dom";
+
 import images from "../images.json";
 
 class ImagePage extends React.Component {
   state = {
     images
   };
+  renderImage = id => {
+    // Filter this.state.images for images that is  equal to the id of image clicked
+    const images = this.state.images.filter(image => image.id === id);
+    // Set this.state.images equal to the new images array
+    this.setState({ images });
+  };
   render() {
     return (
-      <Wrapper>
+      <Wrapper style={{ padding: "5%" }}>
         {this.state.images.map(image => (
-          <ImagePageCard id={image.id} key={image.id} image={image.image} />
+          <ImageCard
+            id={image.id}
+            key={image.id}
+            image={image.image}
+            renderImage={this.renderImage}
+          />
         ))}
-        <div>
-          <h1 />
-        </div>
-        {/* <Link to="/inst" className="nav-link">
-          <button>Instructions</button>
-        </Link> */}
       </Wrapper>
     );
   }
