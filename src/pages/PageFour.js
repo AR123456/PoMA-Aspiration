@@ -38,7 +38,6 @@ const PageFour = () => (
         </h2>
       </Container>
     </Grid>
-    ;
   </Wrapper>
 );
 export default PageFour;

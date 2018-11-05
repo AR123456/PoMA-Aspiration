@@ -2,12 +2,13 @@ import React, { Component } from "react";
 import { Carousel, Button } from "react-bootstrap";
 import Aura from "../components/Aura";
 import { Animated } from "react-animated-css";
-import { Link } from "react-router-dom";
+
 import ImagePage from "./ImagePage";
-import ImageCard from "../components/ImageCard";
+
 import PageFour from "./PageFour";
 import PageFive from "./PageFive";
 import PageSeven from "./PageSeven";
+import PageEight from "./PageEight";
 
 class Intro extends Component {
   constructor(props, context) {
@@ -73,8 +74,10 @@ class Intro extends Component {
             </Aura>
           </Carousel.Item>
           <Carousel.Item>
-            <Aura backgroundImage="#" />
-            <Carousel.Caption style={{ color: "black", paddingBottom: 100 }}>
+            <Aura backgroundImage="#">
+              <PageEight />
+            </Aura>
+            {/* <Carousel.Caption style={{ color: "black", paddingBottom: 100 }}>
               <Animated
                 animationIn="fadeIn"
                 animationInDelay="1000"
@@ -105,7 +108,7 @@ class Intro extends Component {
                   </Button>
                 </Link>
               </Animated>
-            </Carousel.Caption>
+            </Carousel.Caption> */}
           </Carousel.Item>
           {/* <Carousel.Item>
             <Form />
