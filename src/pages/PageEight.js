@@ -2,14 +2,18 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import Wrapper from "../components/Wrapper";
 import Container from "../components/Container";
+import ImagePage from "./ImagePage";
 import ImageCard from "../components/ImageCard";
 import { Link } from "react-router-dom";
 
 class PageEight extends React.Component {
   render() {
     return (
-      <Wrapper>
-        <ImageCard />
+      <Wrapper style={{ padding: "5%" }}>
+        <ImagePage>
+          <ImageCard renderImage={this.renderImage} />
+        </ImagePage>
+
         <Container>
           <h2 style={{ textAlign: "left", color: "black", paddingBottom: 100 }}>
             Jot down a few words to capture connections between the image and

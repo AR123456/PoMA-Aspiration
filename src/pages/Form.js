@@ -1,7 +1,7 @@
 import React from "react";
 import { FormGroup, ControlLabel, FormControl, Button } from "react-bootstrap";
 import ImageCard from "../components/ImageCard";
-
+import ImagePage from "./ImagePage";
 import Wrapper from "../components/Wrapper";
 import "./Form.css";
 
@@ -42,7 +42,8 @@ class Form extends React.Component {
   render() {
     return (
       <Wrapper>
-        <ImageCard />
+        {/* <ImageCard /> */}
+        <ImagePage />
         <form>
           <FormGroup
             controlId="formBasicText"
