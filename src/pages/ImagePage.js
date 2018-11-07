@@ -12,6 +12,8 @@ class ImagePage extends React.Component {
     // Filter this.state.images for images that is  equal to the id of image clicked
     const images = this.state.images.filter(image => image.id === id);
     // Set this.state.images equal to the new images array
+    console.log(images);
+    localStorage.setItem("currentImage", JSON.stringify(images[0]));
     this.setState({ images });
   };
   render() {

@@ -40,10 +40,12 @@ class Form extends React.Component {
     });
   };
   render() {
+    const image = JSON.parse(localStorage.getItem("currentImage"));
     return (
       <Wrapper>
         {/* <ImageCard /> */}
-        <ImagePage />
+        {/* <ImagePage /> */}
+        <img src={image.image} style={{ height: "100px", width: "100px" }} />
         <form>
           <FormGroup
             controlId="formBasicText"

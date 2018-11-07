@@ -8,12 +8,12 @@ import { Link } from "react-router-dom";
 
 class PageEight extends React.Component {
   render() {
+    const image = JSON.parse(localStorage.getItem("currentImage"));
+    // console.log(image, "myImage");
     return (
       <Wrapper style={{ padding: "5%" }}>
-        <ImagePage>
-          <ImageCard renderImage={this.renderImage} />
-        </ImagePage>
-
+        {/* <ImageCard /> */}
+        <img src={image.image} style={{ height: "100px", width: "100px" }} />
         <Container>
           <h2 style={{ textAlign: "left", color: "black", paddingBottom: 100 }}>
             Jot down a few words to capture connections between the image and
