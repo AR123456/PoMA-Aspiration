@@ -12,7 +12,7 @@ const Home = () => (
     <Aura backgroundImage="./images/umanoide.jpg">
       <h1>Path of Mindful Activity:</h1>
       <br />
-      <h2>The nitty-gritty of compassion in action</h2>
+      <h2>The nitty-gritty of wisdom & compassion in action</h2>
       <br />
       <Container>
         <Row />
@@ -39,7 +39,7 @@ const Home = () => (
           </Col>
         </Row>
         <br />
-        <Link to="/intro" className="nav-link">
+        <Link to="/caro" className="nav-link">
           <Button bsStyle="primary" bsSize="large">
             Next{" "}
           </Button>

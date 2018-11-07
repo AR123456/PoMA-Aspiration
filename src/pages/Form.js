@@ -1,7 +1,5 @@
 import React from "react";
 import { FormGroup, ControlLabel, FormControl, Button } from "react-bootstrap";
-import ImageCard from "../components/ImageCard";
-import ImagePage from "./ImagePage";
 import Wrapper from "../components/Wrapper";
 import "./Form.css";
 
@@ -43,9 +41,7 @@ class Form extends React.Component {
     const image = JSON.parse(localStorage.getItem("currentImage"));
     return (
       <Wrapper>
-        {/* <ImageCard /> */}
-        {/* <ImagePage /> */}
-        <img src={image.image} style={{ height: "100px", width: "100px" }} />
+        <img src={image.image} style={{ height: "300px", width: "300px" }} />
         <form>
           <FormGroup
             controlId="formBasicText"
@@ -151,6 +147,7 @@ class Form extends React.Component {
             <FormControl.Feedback />
             {/* <HelpBlock>Validation is based on string length.</HelpBlock> */}
           </FormGroup>
+
           <Button
             bsStyle="primary"
             bsSize="large"
