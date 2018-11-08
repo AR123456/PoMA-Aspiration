@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home";
 
 import Form from "./pages/Form";
-import Navbar from "./components/Navbar";
+
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 
@@ -12,8 +12,7 @@ import Caro from "./pages/Caro";
 
 const App = () => (
   <Router>
-    <div>
-      <Navbar />
+    <div className="container-fluid">
       <Wrapper>
         <Route exact path="/" component={Home} />
         <Route exact path="/home" component={Home} />
