@@ -17,29 +17,12 @@ const Home = () => (
       <Container>
         <Row />
         <Row>
-          <Col size="md-6">
-            <h2>
-              Approaching it
-              {/* [Video still & 2 minute video clip of, e.g., MDMP
-              explaining the practice described in the following slides] */}
-            </h2>
-
-            <iframe src="./images/rain.mp4" title="#" />
-          </Col>
-          <Col size="md-6">
-            <h2>
-              Test driving it
-              {/* [Video still & 2 minute video clip of someone
-              describing their own use of the practice described in the flowing */}
-              {/* slides.] */}
-            </h2>
-            <iframe src="./images/snow.mp4" title="#">
-              {" "}
-            </iframe>
-          </Col>
+          <div style={{ paddingBottom: 400 }}>
+            <h1 style={{ fontSize: 60 }}>Pause and Relax.... </h1>
+          </div>
         </Row>
         <br />
-        <Link to="/pandr" className="nav-link">
+        <Link to="/relax" className="nav-link">
           <Button bsStyle="primary" bsSize="large">
             Next{" "}
           </Button>

@@ -1,7 +1,8 @@
 import React from "react";
 import ImageCard from "../components/ImageCard";
 import Wrapper from "../components/Wrapper";
-
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import images from "../images.json";
 
 class ImagePage extends React.Component {
@@ -27,6 +28,11 @@ class ImagePage extends React.Component {
             renderImage={this.renderImage}
           />
         ))}
+        <Link to="/change" className="nav-link">
+          <Button bsStyle="primary" bsSize="large">
+            Next{" "}
+          </Button>
+        </Link>
       </Wrapper>
     );
   }
