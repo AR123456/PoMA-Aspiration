@@ -1,6 +1,7 @@
 import React from "react";
 import { FormGroup, ControlLabel, FormControl, Button } from "react-bootstrap";
 import Wrapper from "../components/Wrapper";
+import Container from "../components/Container";
 import "./Form.css";
 
 class Form extends React.Component {
@@ -40,7 +41,7 @@ class Form extends React.Component {
   render() {
     const image = JSON.parse(localStorage.getItem("currentImage"));
     return (
-      <Wrapper>
+      <Container>
         <img src={image.image} style={{ height: "300px", width: "300px" }} />
         <form>
           <FormGroup
@@ -156,7 +157,7 @@ class Form extends React.Component {
             Print
           </Button>
         </form>
-      </Wrapper>
+      </Container>
     );
   }
 }

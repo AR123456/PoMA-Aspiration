@@ -8,7 +8,7 @@ import Aura from "../components/Aura";
 
 const Relax = () => (
   <Aura backgroundImage="./images/umanoide.jpg">
-    <Wrapper>
+    <Container>
       <Grid>
         <Row className="show-grid">
           <Col xsOffset={1}>
@@ -21,6 +21,7 @@ const Relax = () => (
             </h1>
           </Col>
         </Row>
+
         <Container className="border">
           <h2>
             <Row className="show-grid">
@@ -47,7 +48,7 @@ const Relax = () => (
           Next{" "}
         </Button>
       </Link>
-    </Wrapper>
+    </Container>
   </Aura>
 );
 export default Relax;

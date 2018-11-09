@@ -1,6 +1,7 @@
 import React from "react";
 import ImageCard from "../components/ImageCard";
 import Wrapper from "../components/Wrapper";
+import Container from "../components/Container";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import images from "../images.json";
@@ -19,7 +20,7 @@ class ImagePage extends React.Component {
   };
   render() {
     return (
-      <Wrapper style={{ padding: "5%" }}>
+      <Container style={{ padding: "5%" }}>
         {this.state.images.map(image => (
           <ImageCard
             id={image.id}
@@ -33,7 +34,7 @@ class ImagePage extends React.Component {
             Next{" "}
           </Button>
         </Link>
-      </Wrapper>
+      </Container>
     );
   }
 }

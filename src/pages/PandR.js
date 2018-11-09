@@ -18,7 +18,10 @@ const Home = () => (
         <Row />
         <Row>
           <div style={{ paddingBottom: 400 }}>
-            <h1 style={{ fontSize: 60 }}>Pause and Relax.... </h1>
+            <h1 style={{ fontSize: 60 }}>
+              <a className="image rust">Pause</a> and{" "}
+              <a style={{ color: "#f0d907" }}>Relax....</a>{" "}
+            </h1>
           </div>
         </Row>
         <br />

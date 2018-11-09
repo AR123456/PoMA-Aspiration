@@ -10,9 +10,12 @@ const Home = () => (
   <div>
     <br />
     <Aura backgroundImage="./images/umanoide.jpg">
-      <h1>Path of Mindful Activity:</h1>
+      <h1 style={{ color: "#F07407" }}>Path of Mindful Activity:</h1>
       <br />
-      <h2>The nitty-gritty of wisdom & compassion in action</h2>
+      <h2>
+        The <a style={{ color: "#f0d907" }}>nitty-gritty</a> of wisdom &
+        compassion in action
+      </h2>
       <br />
       <Container>
         <Row />

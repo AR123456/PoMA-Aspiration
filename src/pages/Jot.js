@@ -12,7 +12,7 @@ class Jot extends React.Component {
     // console.log(image, "myImage");
     return (
       <Aura>
-        <Wrapper style={{ padding: "5%" }}>
+        <Container style={{ padding: "5%" }}>
           <img src={image.image} style={{ height: "300px", width: "300px" }} />
           <Container>
             <h2
@@ -28,7 +28,7 @@ class Jot extends React.Component {
               Go On
             </Button>
           </Link>
-        </Wrapper>
+        </Container>
       </Aura>
     );
   }
