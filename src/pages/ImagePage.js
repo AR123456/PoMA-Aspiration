@@ -1,6 +1,6 @@
 import React from "react";
 import ImageCard from "../components/ImageCard";
-import Wrapper from "../components/Wrapper";
+
 import Container from "../components/Container";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -30,8 +30,8 @@ class ImagePage extends React.Component {
           />
         ))}
         <Link to="/change" className="nav-link">
-          <Button bsStyle="primary" bsSize="large">
-            Next{" "}
+          <Button bsStyle="primary" style={{ float: "right" }}>
+            Go On{" "}
           </Button>
         </Link>
       </Container>

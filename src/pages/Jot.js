@@ -1,6 +1,5 @@
 import React from "react";
 
-import Wrapper from "../components/Wrapper";
 import Container from "../components/Container";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -13,7 +12,11 @@ class Jot extends React.Component {
     return (
       <Aura>
         <Container style={{ padding: "5%" }}>
-          <img src={image.image} style={{ height: "300px", width: "300px" }} />
+          <img
+            src={image.image}
+            style={{ height: "300px", width: "300px" }}
+            alt="#"
+          />
           <Container>
             <h2
               style={{ textAlign: "left", color: "black", paddingBottom: 100 }}
@@ -24,7 +27,7 @@ class Jot extends React.Component {
             </h2>
           </Container>
           <Link to="/form" className="nav-link">
-            <Button bsStyle="primary" bsSize="large">
+            <Button bsStyle="primary" style={{ float: "right" }}>
               Go On
             </Button>
           </Link>

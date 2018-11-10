@@ -1,6 +1,6 @@
 import React from "react";
 import { FormGroup, ControlLabel, FormControl, Button } from "react-bootstrap";
-import Wrapper from "../components/Wrapper";
+
 import Container from "../components/Container";
 import "./Form.css";
 
@@ -42,7 +42,11 @@ class Form extends React.Component {
     const image = JSON.parse(localStorage.getItem("currentImage"));
     return (
       <Container>
-        <img src={image.image} style={{ height: "300px", width: "300px" }} />
+        <img
+          src={image.image}
+          style={{ height: "300px", width: "300px" }}
+          alt="#"
+        />
         <form>
           <FormGroup
             controlId="formBasicText"
@@ -150,12 +154,14 @@ class Form extends React.Component {
           </FormGroup>
 
           <Button
+            style={{ float: "right", marginBottom: 30 }}
             bsStyle="primary"
-            bsSize="large"
+            // bsSize="med"
             onClick={this.handleFormSubmit}
           >
             Print
           </Button>
+          <br />
         </form>
       </Container>
     );

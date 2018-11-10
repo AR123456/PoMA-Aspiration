@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Row, Col } from "react-bootstrap";
-import Wrapper from "../components/Wrapper";
+
 import Container from "../components/Container";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -70,8 +70,12 @@ const Change = () => (
       </Container>
     </Grid>
     <Link to="/jot" className="nav-link">
-      <Button bsStyle="primary" bsSize="large">
-        Next{" "}
+      <Button
+        bsStyle="primary"
+        // bsSize="med"
+        style={{ float: "right", marginRight: 30 }}
+      >
+        Go On{" "}
       </Button>
     </Link>
   </Aura>

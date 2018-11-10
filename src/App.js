@@ -8,9 +8,8 @@ import Change from "./pages/Change";
 import Jot from "./pages/Jot";
 import Form from "./pages/Form";
 import ImagePage from "./pages/ImagePage";
-import Footer from "./components/Footer";
+
 import NavBar from "./components/NavBar";
-import Wrapper from "./components/Wrapper";
 
 import PandR from "./pages/PandR";
 

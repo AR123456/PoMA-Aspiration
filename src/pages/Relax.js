@@ -1,13 +1,13 @@
 import React from "react";
 import { Grid, Row, Col } from "react-bootstrap";
-import Wrapper from "../components/Wrapper";
+
 import Container from "../components/Container";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Aura from "../components/Aura";
 
 const Relax = () => (
-  <Aura backgroundImage="./images/umanoide.jpg">
+  <Aura backgroundImage="./images/czerwinski.jpg">
     <Container>
       <Grid>
         <Row className="show-grid">
@@ -44,8 +44,8 @@ const Relax = () => (
         </Container>
       </Grid>
       <Link to="/choose" className="nav-link">
-        <Button bsStyle="primary" bsSize="large">
-          Next{" "}
+        <Button bsStyle="primary" style={{ float: "right" }}>
+          Go on{" "}
         </Button>
       </Link>
     </Container>

@@ -5,7 +5,6 @@ import { Button } from "react-bootstrap";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import { Link } from "react-router-dom";
-import NavBar from "../components/NavBar";
 
 const Home = () => (
   <div>
@@ -43,9 +42,13 @@ const Home = () => (
           </Col>
         </Row>
         <br />
-        <Link to="/pandr" className="nav-link">
-          <Button bsStyle="primary" bsSize="large">
-            Next{" "}
+        <Link to="/pandr" className="nav-link" style={{ float: "right" }}>
+          <Button
+            bsStyle="primary"
+            //   bsSize="med
+            // "
+          >
+            Go on{" "}
           </Button>
         </Link>
       </Container>

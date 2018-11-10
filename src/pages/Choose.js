@@ -1,13 +1,13 @@
 import React from "react";
 import { Grid, Row, Col } from "react-bootstrap";
-import Wrapper from "../components/Wrapper";
+
 import Container from "../components/Container";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Aura from "../components/Aura";
 
 const Choose = () => (
-  <Aura backgroundImage="./images/umanoide.jpg">
+  <Aura backgroundImage="./images/rawpixel.jpg">
     <Grid>
       <Container className="border">
         <Row>
@@ -48,8 +48,12 @@ const Choose = () => (
       </Container>
     </Grid>
     <Link to="/imagepage" className="nav-link">
-      <Button bsStyle="primary" bsSize="large">
-        Next{" "}
+      <Button
+        bsStyle="primary"
+        // bsSize="med"
+        style={{ float: "right", marginRight: 30 }}
+      >
+        Go On{" "}
       </Button>
     </Link>
   </Aura>
