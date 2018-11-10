@@ -1,0 +1,19 @@
+/* NavBar {
+  background-color: brown;
+  opacity: 0;
+  filter: alpha(opacity=0);
+} */
+nav.navbar.navbar-default {
+  background-color: white;
+  border-color: white;
+  min-height: auto;
+}
+.navbar {
+  position: relative;
+  min-height: auto;
+  margin-bottom: 0px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: initial;
+}

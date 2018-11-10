@@ -5,6 +5,7 @@ import { Button } from "react-bootstrap";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import { Link } from "react-router-dom";
+import NavBar from "../components/NavBar";
 
 const Home = () => (
   <div>

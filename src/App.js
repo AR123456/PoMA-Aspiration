@@ -9,6 +9,7 @@ import Jot from "./pages/Jot";
 import Form from "./pages/Form";
 import ImagePage from "./pages/ImagePage";
 import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 import Wrapper from "./components/Wrapper";
 
 import PandR from "./pages/PandR";
@@ -16,6 +17,7 @@ import PandR from "./pages/PandR";
 const App = () => (
   <Router>
     <div className="container-fluid">
+      <NavBar />
       <Route exact path="/" component={Home} />
       <Route exact path="/home" component={Home} />
       <Route exact path="/pandr" component={PandR} />
@@ -26,8 +28,6 @@ const App = () => (
       <Route exact path="/change" component={Change} />
       <Route exact path="/jot" component={Jot} />
       <Route exact path="/form" component={Form} />
-
-      <Footer />
     </div>
   </Router>
 );
