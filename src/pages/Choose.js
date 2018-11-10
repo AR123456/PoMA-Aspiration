@@ -8,6 +8,7 @@ import Aura from "../components/Aura";
 
 const Choose = () => (
   <Aura backgroundImage="./images/rawpixel.jpg">
+    <br />
     <Grid>
       <Container className="border">
         <Row>

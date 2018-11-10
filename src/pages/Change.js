@@ -22,7 +22,7 @@ const Change = () => (
       <Container>
         <br />
         <Row>
-          <Col xsOffset={1} style={{ textAlign: "left" }}>
+          <Col xsOffset={0} style={{ textAlign: "left" }}>
             <h2>
               {" "}
               What connections are there with a change I’d like to make in the

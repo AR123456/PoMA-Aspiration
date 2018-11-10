@@ -21,26 +21,32 @@ const Home = () => (
         <Row />
         <Row>
           <Col size="md-6">
-            <h2>
-              Approaching it
-              {/* [Video still & 2 minute video clip of, e.g., MDMP
-              explaining the practice described in the following slides] */}
-            </h2>
-
-            <iframe src="./images/rain.mp4" title="#" />
+            <h2>Approaching it</h2>
+            <iframe
+              width="400"
+              height="300"
+              src="https://www.youtube.com/embed/62Gzbd4qu5E"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              title="#"
+            />
           </Col>
           <Col size="md-6">
-            <h2>
-              Test driving it
-              {/* [Video still & 2 minute video clip of someone
-              describing their own use of the practice described in the flowing */}
-              {/* slides.] */}
-            </h2>
-            <iframe src="./images/snow.mp4" title="#">
-              {" "}
-            </iframe>
+            <h2>Test driving it</h2>
+
+            <iframe
+              width="400"
+              height="300"
+              src="https://www.youtube.com/embed/u-oPJYE9v5o"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              title="#"
+            />
           </Col>
         </Row>
+
         <br />
         <Link to="/pandr" className="nav-link" style={{ float: "right" }}>
           <Button
