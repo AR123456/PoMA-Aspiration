@@ -44,7 +44,7 @@ class Form extends React.Component {
       <Container>
         <img
           src={image.image}
-          style={{ height: "300px", width: "300px" }}
+          style={{ height: "30%", width: "30%" }}
           alt="#"
         />
         <form>

@@ -8,6 +8,7 @@ import Aura from "../components/Aura";
 
 const Change = () => (
   <Aura backgroundImage="./images/umanoide.jpg">
+    <br />
     <Grid>
       <Container className="border">
         <Row>

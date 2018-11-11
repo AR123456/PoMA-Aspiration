@@ -14,7 +14,7 @@ class Jot extends React.Component {
         <Container style={{ padding: "5%" }}>
           <img
             src={image.image}
-            style={{ height: "325px", width: "325px" }}
+            style={{ height: "50%", width: "50%" }}
             alt="#"
           />
           <Container>
