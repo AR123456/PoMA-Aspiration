@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Aura from "../components/Aura";
 
 const Change = () => (
-  <Aura backgroundImage="./images/umanoide.jpg">
+  <Aura backgroundImage="./images/umanoideophalf.svg">
     <br />
     <Grid>
       <Container className="border">

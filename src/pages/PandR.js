@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Home = () => (
   <div>
     <br />
-    <Aura backgroundImage="./images/burden.jpg">
+    <Aura backgroundImage="./images/rpgreen.jpg">
       {/* <h1>Path of Mindful Activity:</h1>
       <br />
       <h2>The nitty-gritty of wisdom & compassion in action</h2>

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Aura from "../components/Aura";
 
 const Relax = () => (
-  <Aura backgroundImage="./images/czerwinski.jpg">
+  <Aura backgroundImage="./images/rpteal.jpg">
     <Container>
       <Grid>
         <Row className="show-grid">

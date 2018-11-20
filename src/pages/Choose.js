@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Aura from "../components/Aura";
 
 const Choose = () => (
-  <Aura backgroundImage="./images/rawpixel.jpg">
+  <Aura backgroundImage="./images/rpgrey.jpg">
     <br />
     <Grid>
       <Container className="border">
