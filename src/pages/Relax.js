@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Aura from "../components/Aura";
 
 const Relax = () => (
-  <Aura backgroundImage="./images/rpteal.jpg">
+  <Aura>
     <Container>
       <Grid>
         <Row className="show-grid">
@@ -43,6 +43,7 @@ const Relax = () => (
           </h2>
         </Container>
       </Grid>
+      <br />
       <Link to="/choose" className="nav-link">
         <Button bsStyle="primary" style={{ float: "right" }}>
           Go on{" "}

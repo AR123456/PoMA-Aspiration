@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Aura from "../components/Aura";
 
 const Change = () => (
-  <Aura backgroundImage="./images/umanoideophalf.svg">
+  <Aura>
     <br />
     <Grid>
       <Container className="border">
@@ -70,11 +70,12 @@ const Change = () => (
         </Row>
       </Container>
     </Grid>
+    <br />
     <Link to="/jot" className="nav-link">
       <Button
         bsStyle="primary"
         // bsSize="med"
-        style={{ float: "right", marginRight: 30 }}
+        style={{ float: "right", marginRight: 100 }}
       >
         Go On{" "}
       </Button>

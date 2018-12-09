@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Aura from "../components/Aura";
 
 const Choose = () => (
-  <Aura backgroundImage="./images/rpgrey.jpg">
+  <Aura>
     <br />
     <Grid>
       <Container className="border">
@@ -52,7 +52,7 @@ const Choose = () => (
       <Button
         bsStyle="primary"
         // bsSize="med"
-        style={{ float: "right", marginRight: 30 }}
+        style={{ float: "right", marginRight: 200 }}
       >
         Go On{" "}
       </Button>
