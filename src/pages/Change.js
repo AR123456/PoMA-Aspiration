@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Aura from "../components/Aura";
 
 const Change = () => (
-  <Aura>
+  <Aura backgroundImage="/public/images/lightrpblue.jpg">
     <br />
     <Grid>
       <Container className="border">
@@ -15,7 +15,12 @@ const Change = () => (
           <Col xsOffset={1} style={{ textAlign: "left" }}>
             <h2>
               The image you chose will be waiting for you on the next screen. As
-              you look, <a style={{ color: "#F07407" }}>ask:</a>
+              you look,{" "}
+              <a
+                style={{ color: "#f15d22", textShadow: "-1.5px -1.5px 0 #000" }}
+              >
+                ask:
+              </a>
             </h2>
           </Col>
         </Row>
@@ -34,14 +39,26 @@ const Change = () => (
         <br />
         <Row>
           <Col xsOffset={0}>
-            <h2 style={{ color: "#F07407", textAlign: "left" }}>
+            <h2
+              style={{
+                color: "#f15d22",
+                textShadow: "-1.5px -1.5px 0 #000",
+                textAlign: "left"
+              }}
+            >
               ….greater compassion…
             </h2>
           </Col>
         </Row>
         <Row>
           <Col xsOffset={1}>
-            <h2 style={{ color: "#f0d907", textAlign: "left" }}>
+            <h2
+              style={{
+                color: "rgba(255, 255, 2, 1)",
+                textShadow: "-1.5px -1.5px 0 #000",
+                textAlign: "left"
+              }}
+            >
               {" "}
               …being kinder…
             </h2>
@@ -49,7 +66,13 @@ const Change = () => (
         </Row>
         <Row>
           <Col xsOffset={0}>
-            <h2 style={{ color: "#F07407", textAlign: "left" }}>
+            <h2
+              style={{
+                color: "#f15d22",
+                textShadow: "-1.5px -1.5px 0 #000",
+                textAlign: "left"
+              }}
+            >
               {" "}
               …increased patience…
             </h2>
@@ -57,7 +80,13 @@ const Change = () => (
         </Row>
         <Row>
           <Col xsOffset={1}>
-            <h2 style={{ color: "#f0d907", textAlign: "left" }}>
+            <h2
+              style={{
+                color: "rgba(255, 255, 2, 1)",
+                textShadow: "-1.5px -1.5px 0 #000",
+                textAlign: "left"
+              }}
+            >
               {" "}
               …more generosity…
             </h2>

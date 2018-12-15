@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Aura from "../components/Aura";
 
 const Choose = () => (
-  <Aura>
+  <Aura backgroundColor="rgb(235, 235, 252)">
     <br />
     <Grid>
       <Container className="border">
@@ -35,9 +35,21 @@ const Choose = () => (
         </Row>
         <Row>
           <Col sm={6} xsOffset={4}>
-            <h2 style={{ color: "#F07407" }}>you feel drawn to</h2>
+            <h2
+              style={{ color: "#f15d22", textShadow: "-1.5px -1.5px 0 #000" }}
+            >
+              you feel drawn to
+            </h2>
             <h2> or </h2>
-            <h2 style={{ color: "#f0d907" }}> that sparks curiosity</h2>
+            <h2
+              style={{
+                color: "rgba(255, 255, 2, 1)",
+                textShadow: "-1.5px -1.5px 0 #000"
+              }}
+            >
+              {" "}
+              that sparks curiosity
+            </h2>
           </Col>
         </Row>
 

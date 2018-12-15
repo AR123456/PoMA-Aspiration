@@ -10,7 +10,7 @@ class Jot extends React.Component {
     const image = JSON.parse(localStorage.getItem("currentImage"));
     // console.log(image, "myImage");
     return (
-      <Aura>
+      <Aura backgroundImage="/public/images/lightrpblue.jpg">
         <Container style={{ padding: "5%" }}>
           <img
             src={image.image}
