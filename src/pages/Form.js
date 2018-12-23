@@ -47,6 +47,7 @@ class Form extends React.Component {
           style={{ height: "30%", width: "30%" }}
           alt="#"
         />
+
         <form>
           <FormGroup
             controlId="formBasicText"
@@ -154,7 +155,11 @@ class Form extends React.Component {
           </FormGroup>
 
           <Button
-            style={{ float: "right", marginBottom: 30 }}
+            style={{
+              float: "right",
+              marginBottom: "60px",
+              marginRight: "60px"
+            }}
             bsStyle="primary"
             // bsSize="med"
             onClick={this.handleFormSubmit}

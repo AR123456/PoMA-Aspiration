@@ -14,7 +14,7 @@ class Jot extends React.Component {
         <Container style={{ padding: "5%" }}>
           <img
             src={image.image}
-            style={{ height: "50%", width: "50%" }}
+            style={{ height: "45%", width: "45%" }}
             alt="#"
           />
           <Container>
@@ -24,13 +24,17 @@ class Jot extends React.Component {
               Jot down a few words to capture connections between the image and
               your aspiration for change. If no thoughts come, just relax and
               rest your eyes on the image.Thoughts may come later, or tomorrow.
+              <br />
+              <Link to="/form" className="nav-link">
+                <Button
+                  bsStyle="primary"
+                  style={{ float: "right", marginRight: "40px" }}
+                >
+                  Go On
+                </Button>
+              </Link>
             </h2>
           </Container>
-          <Link to="/form" className="nav-link">
-            <Button bsStyle="primary" style={{ float: "right" }}>
-              Go On
-            </Button>
-          </Link>
         </Container>
       </Aura>
     );

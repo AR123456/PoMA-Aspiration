@@ -11,7 +11,6 @@ const Home = () => (
     <br />
     <Aura backgroundColor="rgb(235, 235, 252)">
       <Container>
-        <Row />
         <Row>
           <div style={{ paddingBottom: 400, marginTop: 300 }}>
             <h1 style={{ fontSize: 60 }}>
@@ -30,12 +29,12 @@ const Home = () => (
                 Relax....
               </a>{" "}
             </h1>
+
+            <Link to="/relax" className="nav-link" style={{ float: "right" }}>
+              <Button bsStyle="primary">Go on </Button>
+            </Link>
           </div>
         </Row>
-        <br />
-        <Link to="/relax" className="nav-link" style={{ float: "right" }}>
-          <Button bsStyle="primary">Go on </Button>
-        </Link>
       </Container>
     </Aura>
   </div>
