@@ -4,9 +4,9 @@
   filter: alpha(opacity=0);
 } */
 nav.navbar.navbar-default {
-  background-color: rgb(235, 235, 252);
+  background-color: aliceblue;
   /* background-image: "../../../public/images/lightrpblue.jpg"; */
-  border-color: rgb(235, 235, 252);
+  border-color: aliceblue;
   min-height: auto;
 }
 .navbar {
