@@ -130,6 +130,7 @@ class Form extends React.Component {
               placeholder="Describe the particular body sensations or behavior that you want to recognize as signals that the habit is “launching.”"
               onChange={this.handleChange}
               componentClass="textarea"
+              rows="4"
             />
             <FormControl.Feedback />
             {/* <HelpBlock>Validation is based on string length.</HelpBlock> */}
@@ -149,6 +150,7 @@ class Form extends React.Component {
               placeholder="Describe what you want the image above to remind you to do differently with your body in that moment, before you react."
               onChange={this.handleChange}
               componentClass="textarea"
+              rows="4"
             />
             <FormControl.Feedback />
             {/* <HelpBlock>Validation is based on string length.</HelpBlock> */}
