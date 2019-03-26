@@ -35,16 +35,14 @@ const Choose = () => (
         </Row>
         <Row>
           <Col sm={6} xsOffset={4}>
-            <h2
-              style={{ color: "#f15d22", textShadow: "-1.5px -1.5px 0 #000" }}
-            >
+            <h2 style={{ color: "#f15d22", textShadow: "-.5px -.5px 0 #000" }}>
               you feel drawn to
             </h2>
             <h2> or </h2>
             <h2
               style={{
                 color: "rgba(255, 255, 2, 1)",
-                textShadow: "-1.5px -1.5px 0 #000"
+                textShadow: "-.5px -.5px 0 #000"
               }}
             >
               {" "}

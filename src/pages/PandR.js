@@ -14,16 +14,14 @@ const Home = () => (
         <Row>
           <div style={{ paddingBottom: 400, marginTop: 300 }}>
             <h1 style={{ fontSize: 60 }}>
-              <a
-                style={{ color: "#f15d22", textShadow: "-1.5px -1.5px 0 #000" }}
-              >
+              <a style={{ color: "#f15d22", textShadow: "-.5px -.5px 0 #000" }}>
                 Pause
               </a>{" "}
               and{" "}
               <a
                 style={{
                   color: "rgba(255, 255, 2, 1)",
-                  textShadow: "-1.5px -1.5px 0 #000"
+                  textShadow: "-.5px -.5px 0 #000"
                 }}
               >
                 Relax....

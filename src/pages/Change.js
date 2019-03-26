@@ -42,7 +42,7 @@ const Change = () => (
             <h2
               style={{
                 color: "#f15d22",
-                textShadow: "-1.5px -1.5px 0 #000",
+                textShadow: "-.5px -.5px 0 #000",
                 textAlign: "left"
               }}
             >
@@ -55,7 +55,7 @@ const Change = () => (
             <h2
               style={{
                 color: "rgba(255, 255, 2, 1)",
-                textShadow: "-1.5px -1.5px 0 #000",
+                textShadow: "-.5px -.5px 0 #000",
                 textAlign: "left"
               }}
             >
@@ -69,7 +69,7 @@ const Change = () => (
             <h2
               style={{
                 color: "#f15d22",
-                textShadow: "-1.5px -1.5px 0 #000",
+                textShadow: "-.5px -.5px 0 #000",
                 textAlign: "left"
               }}
             >
@@ -83,7 +83,7 @@ const Change = () => (
             <h2
               style={{
                 color: "rgba(255, 255, 2, 1)",
-                textShadow: "-1.5px -1.5px 0 #000",
+                textShadow: "-.5px -.5px 0 #000",
                 textAlign: "left"
               }}
             >

@@ -10,7 +10,7 @@ const Home = () => (
   <div>
     <br />
     <Aura backgroundColor="rgb(235, 235, 252)">
-      <h1 style={{ color: "#f15d22", textShadow: "-1.5px -1.5px 0 #000" }}>
+      <h1 style={{ color: "#f15d22", textShadow: "-.5px -.5px 0 #000" }}>
         Path of Mindful Activity:
       </h1>
       <br />
@@ -19,7 +19,7 @@ const Home = () => (
         <a
           style={{
             color: "rgba(255, 255, 2, 1)",
-            textShadow: "-1.5px -1.5px 0 #000"
+            textShadow: "-.5px -.5px 0 #000"
           }}
         >
           nitty-gritty
@@ -32,6 +32,7 @@ const Home = () => (
           <Col size="md-6">
             <h2>Approaching it</h2>
             <iframe
+              title="Approching"
               width="400"
               height="300"
               src="https://www.youtube.com/embed/qulqm3WDwC4?list=UUQqnLXLhmulg9RafT5ervlg"
@@ -43,6 +44,7 @@ const Home = () => (
           <Col size="md-6">
             <h2>Test driving it</h2>
             <iframe
+              title="Driving"
               width="400"
               height="300"
               src="https://www.youtube.com/embed/wcYomhd8yL4?list=UUQqnLXLhmulg9RafT5ervlg"
