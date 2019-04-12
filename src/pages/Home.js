@@ -9,17 +9,14 @@ import { Link } from "react-router-dom";
 const Home = () => (
   <div>
     <br />
-    <Aura backgroundColor="rgb(235, 235, 252)">
-      <h1 style={{ color: "#f15d22", textShadow: "-.5px -.5px 0 #000" }}>
-        Path of Mindful Activity:
-      </h1>
+    <Aura backgroundColor="#ffffff">
+      <h1 style={{ color: "#f15d22" }}>Path of Mindful Activity:</h1>
       <br />
       <h2>
         The{" "}
         <a
           style={{
-            color: "rgba(255, 255, 2, 1)",
-            textShadow: "-.5px -.5px 0 #000"
+            color: "#FDD528"
           }}
         >
           nitty-gritty

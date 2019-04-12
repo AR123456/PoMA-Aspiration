@@ -9,19 +9,15 @@ import { Link } from "react-router-dom";
 const Home = () => (
   <div>
     <br />
-    <Aura backgroundColor="rgb(235, 235, 252)">
+    <Aura backgroundColor="#ffffff">
       <Container>
         <Row>
           <div style={{ paddingBottom: 400, marginTop: 300 }}>
             <h1 style={{ fontSize: 60 }}>
-              <a style={{ color: "#f15d22", textShadow: "-.5px -.5px 0 #000" }}>
-                Pause
-              </a>{" "}
-              and{" "}
+              <a style={{ color: "#f15d22" }}>Pause</a> and{" "}
               <a
                 style={{
-                  color: "rgba(255, 255, 2, 1)",
-                  textShadow: "-.5px -.5px 0 #000"
+                  color: " #FDD528"
                 }}
               >
                 Relax....

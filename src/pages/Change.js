@@ -15,12 +15,7 @@ const Change = () => (
           <Col xsOffset={1} style={{ textAlign: "left" }}>
             <h2>
               The image you chose will be waiting for you on the next screen. As
-              you look,{" "}
-              <a
-                style={{ color: "#f15d22", textShadow: "-1.5px -1.5px 0 #000" }}
-              >
-                ask:
-              </a>
+              you look, <a style={{ color: "#f15d22" }}>ask:</a>
             </h2>
           </Col>
         </Row>
@@ -42,7 +37,7 @@ const Change = () => (
             <h2
               style={{
                 color: "#f15d22",
-                textShadow: "-.5px -.5px 0 #000",
+
                 textAlign: "left"
               }}
             >
@@ -54,8 +49,8 @@ const Change = () => (
           <Col xsOffset={1}>
             <h2
               style={{
-                color: "rgba(255, 255, 2, 1)",
-                textShadow: "-.5px -.5px 0 #000",
+                color: "#FDD528",
+
                 textAlign: "left"
               }}
             >
@@ -69,7 +64,7 @@ const Change = () => (
             <h2
               style={{
                 color: "#f15d22",
-                textShadow: "-.5px -.5px 0 #000",
+
                 textAlign: "left"
               }}
             >
@@ -82,8 +77,8 @@ const Change = () => (
           <Col xsOffset={1}>
             <h2
               style={{
-                color: "rgba(255, 255, 2, 1)",
-                textShadow: "-.5px -.5px 0 #000",
+                color: "#FDD528",
+
                 textAlign: "left"
               }}
             >

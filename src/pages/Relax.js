@@ -7,16 +7,14 @@ import { Link } from "react-router-dom";
 import Aura from "../components/Aura";
 
 const Relax = () => (
-  <Aura backgroundColor="rgb(235, 235, 252)">
+  <Aura backgroundColor="#ffffff">
     <Container>
       <Grid>
         <Row className="show-grid">
           <Col xsOffset={1}>
             <h1>
               {" "}
-              <span
-                style={{ color: "#f15d22", textShadow: "-1.5px -1.5px 0 #000" }}
-              >
+              <span style={{ color: "#f15d22" }}>
                 <img src="../images/hands.jpg" alt="hands" />
                 Relax...
               </span>
